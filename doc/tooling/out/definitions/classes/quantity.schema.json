@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://fiata.com/digital/schemas/json/definitions/identifier.schema.json","title":"Identifier","description":"A counted number of non-monetary units possibly including fractions.","type":"number"}
