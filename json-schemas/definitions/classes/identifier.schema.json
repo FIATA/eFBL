@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiata.com/digital/schemas/json/definitions/identifier.schema.json",
+  "title": "Identifier",
+  "description": "A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects within the same scheme.",
+  "type": "string"
+}

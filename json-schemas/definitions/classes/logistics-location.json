@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiata.com/digital/schemas/json/definitions/classes/logistics-location.schema.json",
+  "title": "Logistics Location",
+  "description": "A logistics related location.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "A unique identifier for this logistics related location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN).",
+      "$ref": "identifier.schema.json"
+    },
+    "name": {
+      "description": "A name, expressed as text, of this logistics related location.",
+      "$ref": "text.schema.json"
+    },
+    "countryCode": {
+      "description": "The unique identifier of a country for this logistics location.",
+      "$ref": "country-code.schema.json"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

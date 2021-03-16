@@ -1,0 +1,386 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiata.com/digital/schemas/json/definitions/suppliy-chain-consignment.schema.json",
+  "title": "Supply Chain Consignment",
+  "description": "A supply chain consignment specified for a use of this master message assembly.",
+  "type": "object",
+  "properties": {
+    "totalChargeAmount": {
+      "title": "Total Charge Amount",
+      "description": "The total monetary value of all freight and other service charges for this supply chain consignment.",
+      "$ref": "classes/amount.schema.json"
+    },
+    "cargoInsuranceNotProvidedByCTO": {
+      "title": "Cargo Insurance Not Provided By CTO",
+      "description": "The indication of whether or not this supply chain consignment has a nil value for insurance.",
+      "$ref": "classes/indicator.schema.json"
+    },
+    "numberOfPackages": {
+      "description": "The number of packages within this supply chain consignment.",
+      "$ref": "classes/quantity.schema.json"
+    },
+    "declaredValueForCarriageAmount": {
+      "description": "The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.",
+      "$ref": "classes/amount.schema.json"
+    },
+    "consignor": {
+      "description": "The consignor party for this supply chain consignment.",
+      "$ref": "#/$defs/tradeParty"
+    },
+    "consignee": {
+      "description": "The consignee party for this supply chain consignment.",
+      "$ref": "#/$defs/tradeParty"
+    },
+    "cto": {
+      "description": "The carrier party for this supply chain consignment.",
+      "$ref": "#/$defs/tradeParty"
+    },
+    "ctoAgent": {
+      "description": "The party acting as the agent of the carrier for this supply chain consignment.",
+      "$ref": "#/$defs/tradeParty"
+    },
+    "notifiedParty": {
+      "description": "A party who has been or will be notified about this supply chain consignment.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/tradeParty"
+      }
+    },
+    "carrierAcceptanceLocation": {
+      "description": "The location where this supply chain consignment will be, or has been, accepted by the carrier.",
+      "$ref": "classes/logistics-location.json"
+    },
+    "consigneeReceiptLocation": {
+      "description": "The location at which this supply chain consignment will be or has been received by the consignee.",
+      "$ref": "classes/logistics-location.json"
+    },
+    "loadingBaseportLocation": {
+      "description": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract.",
+      "$ref": "classes/logistics-location.json"
+    },
+    "unloadingBaseportLocation": {
+      "description": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract.",
+      "$ref": "classes/logistics-location.json"
+    },
+    "includedConsignmentItem": {
+      "description": "A consignment item included in this supply chain consignment.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/consignmentItem"
+      },
+      "minItems": 1
+    },
+    "mainCarriageTransportMovement": {
+      "description": "A main carriage logistics transport movement for this supply chain consignment.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/logisticsTransportMeans"
+      }
+    },
+    "applicableServiceCharge": {
+      "description": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/paymentPlace"
+      }
+    }
+  },
+  "required": [
+    "consignor",
+    "consignee",
+    "cto",
+    "carrierAcceptanceLocation",
+    "consigneeReceiptLocation",
+    "includedConsignmentItem"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "tradeParty": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "array",
+          "description": "A unique identifier of this trade party.",
+          "items": {
+            "$ref": "classes/standardized-identifier.schema.json"
+          }
+        },
+        "name": {
+          "description": "The name, expressed as text, for this trade party.",
+          "$ref": "classes/text.schema.json"
+        },
+        "languageCode": {
+          "description": "A code specifying a language for this trade party.",
+          "$ref": "classes/code.schema.json"
+        },
+        "definedContactDetails": {
+          "description": "A trade contact defined for this trade party.",
+          "$ref": "#/$defs/tradeContact"
+        },
+        "postalAddress": {
+          "description": "The postal address for this trade party.",
+          "$ref": "#/$defs/tradeAddress"
+        },
+        "taxRegistration": {
+          "description": "A tax registration specified for this trade party.",
+          "type": "array",
+          "items": {
+            "$ref": "classes/standardized-identifier.schema.json"
+          }
+        },
+        "governmentRegistration": {
+          "description": "A governmental registration specified for this trade party.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/governmentRegistration"
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "tradeContact": {
+      "type": "object",
+      "properties": {
+        "personName": {
+          "description": "The name, expressed as text, of this trade contact person.",
+          "$ref": "classes/text.schema.json"
+        },
+        "telephone": {
+          "description": "Telephone communication information for this trade contact.",
+          "$ref": "classes/complete-number.schema.json"
+        },
+        "mobileTelephone": {
+          "description": "The mobile telephone communication information for this trade contact.",
+          "$ref": "classes/complete-number.schema.json"
+        },
+        "emailAddress": {
+          "description": "The email URI communication information for this trade contact.",
+          "$ref": "classes/uri.schema.json"
+        },
+        "note": {
+          "type": "array",
+          "description": "A note specified for this trade contact.",
+          "items": {
+            "$ref": "classes/text.schema.json"
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "tradeAddress": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "array",
+          "description": "A unique identifier of this trade address.",
+          "items": {
+            "$ref": "classes/standardized-identifier.schema.json"
+          }
+        },
+        "postcode": {
+          "description": "A code specifying the postcode of this trade address.",
+          "type": "string"
+        },
+        "streetName": {
+          "description": "A name, expressed as text, of a street or thoroughfare for this trade address.",
+          "type": "string"
+        },
+        "cityName": {
+          "description": "The name, expressed as text, of the city, town or village of this trade address.",
+          "type": "string"
+        },
+        "countryCode": {
+          "description": "The unique identifier of a country for this trade address.",
+          "$ref": "classes/country-code.schema.json"
+        },
+        "countryName": {
+          "description": "A name, expressed as text, of the country for this trade address.",
+          "type": "string"
+        },
+        "countrySubDivisionName": {
+          "description": "A name, expressed as text, of the sub-division of a country for this trade address.",
+          "type": "string"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "governmentRegistration": {
+      "description": "A governmental registration",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "classes/standardized-identifier.schema.json"
+        },
+        "typeCode": {
+          "$ref": "classes/code.schema.json"
+        },
+        "countryCode": {
+          "$ref": "classes/country-code.schema.json"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "consignmentItem": {
+      "description": "A consignment item included in this supply chain consignment.",
+      "properties": {
+        "goodsTypeCode": {
+          "description": "The code specifying the type of supply chain consignment item.",
+          "$ref": "classes/code.schema.json"
+        },
+        "declaredValueForCarriageAmount": {
+          "description": "The monetary value of this supply chain consignment item as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.",
+          "$ref": "classes/amount.schema.json"
+        },
+        "insuranceValueAmount": {
+          "description": "The monetary value of this supply chain consignment item as covered by an insurance policy.",
+          "$ref": "classes/amount.schema.json"
+        },
+        "grossWeight": {
+          "description": "A measure of the gross weight (mass) of this supply chain consignment item which includes packaging but excludes any transport equipment.",
+          "$ref": "classes/measure.schema.json"
+        },
+        "grossVolume": {
+          "description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item.",
+          "$ref": "classes/measure.schema.json"
+        },
+        "cargoNatureIdentification": {
+          "description": "Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes.",
+          "$ref": "#/$defs/transportCargo"
+        },
+        "transportDangerousGoods": {
+          "description": "Dangerous goods transport details applicable to this supply chain consignment item.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/transportDangerousCode"
+          }
+        },
+        "transportPackage": {
+          "description": "A transport package for this supply chain consignment item.",
+          "items": {
+            "$ref": "#/$defs/logisticsPackage"
+          }
+        }
+      },
+      "required": [
+        "cargoNatureIdentification"
+      ],
+      "additionalProperties": false
+    },
+    "transportCargo": {
+      "description": "Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes.",
+      "type": "object",
+      "properties": {
+        "typeCode": {
+          "description": "The code, such as UNECE Recommendation 21 single digit codes, specifying the type of transported cargo.",
+          "$ref": "classes/code.schema.json"
+        },
+        "identificationText": {
+          "description": "Identification, expressed as text, of this transport cargo that is sufficient to identify it for customs, statistical or transport purposes.",
+          "type": "array",
+          "items": {
+            "$ref": "classes/text.schema.json"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "identificationText"
+      ],
+      "additionalProperties": false
+    },
+    "transportDangerousCode": {
+      "description": "Dangerous goods transport details applicable to this supply chain consignment item.",
+      "type": "object",
+      "properties": {
+        "undgId": {
+          "description": "The code specifying the unique United Nations Dangerous Goods (UNDG) number assigned to these transported dangerous goods.",
+          "$ref": "classes/code.schema.json"
+        },
+        "hazardClassificationId": {
+          "description": "The unique identifier of a hazard class applicable to these transported dangerous goods as defined by the relevant governing regulation authority.",
+          "$ref": "classes/standardized-identifier.schema.json"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "logisticsPackage": {
+      "description": "A transport package for this supply chain consignment item.",
+      "type": "object",
+      "properties": {
+        "itemQuantity": {
+          "description": "The number of logistics packages at this level.",
+          "$ref": "classes/quantity.schema.json"
+        },
+        "typeCode": {
+          "description": "A code specifying the type of logistics package.",
+          "type": "array",
+          "items": {
+            "$ref": "classes/code.schema.json"
+          }
+        },
+        "typeText": {
+          "description": "A type, expressed as text, of this logistics package.",
+          "type": "array",
+          "items": {
+            "$ref": "classes/text.schema.json"
+          }
+        },
+        "shippingMarks": {
+          "description": "Physical shipping marks and barcode information for this logistics package.",
+          "type": "array",
+          "items": {
+            "$ref": "classes/text.schema.json"
+          }
+        }
+      },
+      "required": [
+      ],
+      "additionalProperties": false
+    },
+    "logisticsTransportMeans": {
+      "description": "The means of transport used for this logistics transport movement.",
+      "type": "object",
+      "properties": {
+        "typeCode": {
+          "description": "The code specifying the type of logistics means of transport (Reference UNECE Recommendation 28).",
+          "$ref": "classes/code.schema.json"
+        },
+        "typeText": {
+          "description": "The type, expressed as text, of this logistics means of transport.",
+          "$ref": "classes/text.schema.json"
+        },
+        "id": {
+          "description": "An identifier of this logistics means of transport, such as the International Maritime Organization number of a vessel.",
+          "$ref": "classes/standardized-identifier.schema.json"
+        },
+        "name": {
+          "description": "The name, expressed as text, of this logistics means of transport.",
+          "$ref": "classes/text.schema.json"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "paymentPlace": {
+      "description": "The location of the place of payment of this logistics service charge.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "A unique identifier for this logistics related location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN).",
+          "$ref": "classes/standardized-identifier.schema.json"
+        },
+        "name": {
+          "description": "A name, expressed as text, of this logistics related location.",
+          "$ref": "classes/text.schema.json"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+}
