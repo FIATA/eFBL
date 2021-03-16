@@ -52,7 +52,7 @@
 
 *   [Standardized Identifier](./supply-chain-consignment-defs-tradeparty-properties-id-standardized-identifier.md "Identifier which identification scheme is maintained by an external agency") – `https://fiata.com/digital/schemas/json/definitions/classes/standardized-identifier.schema.json#/$defs/tradeParty/properties/id/items`
 
-*   [Supply Chain Consignment](./efbl-properties-supply-chain-consignment.md "A supply chain consignment specified for a use of this master message assembly") – `https://fiata.com/digital/schemas/json/definitions/suppliy-chain-consignment.schema.json#/properties/supply_chain_consighment`
+*   [Supply Chain Consignment](./efbl-properties-supply-chain-consignment.md "A supply chain consignment specified for a use of this master message assembly") – `https://fiata.com/digital/schemas/json/definitions/suppliy-chain-consignment.schema.json#/properties/supply_chain_consignment`
 
 *   [Text](./document-authentication-properties-text.md "The text with optional localization") – `https://fiata.com/digital/schemas/json/definitions/classes/text.schema.json#/properties/statement`
 

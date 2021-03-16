@@ -8,10 +8,12 @@
     "exchanged_document": {
       "$ref": "definitions/exchanged-document.schema.json"
     },
-    "supply_chain_consighment": {
+    "supply_chain_consignment": {
       "$ref": "definitions/supply-chain-consignment.schema.json"
     }
   },
-  "required": ["supply_chain_consighment"],
+  "required": [
+    "supply_chain_consignment"
+  ],
   "additionalProperties": false
 }
