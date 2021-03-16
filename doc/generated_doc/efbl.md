@@ -19,7 +19,7 @@ electronic FIATA Bill of Lading
 | Property                                              | Type     | Required | Nullable       | Defined by                                                                                                                                                          |
 | :---------------------------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [exchanged_document](#exchanged_document)             | `object` | Optional | cannot be null | [eFBL](exchanged-document.md "https://fiata.com/digital/schemas/json/definitions/exchanged-document.schema.json#/properties/exchanged_document")                    |
-| [supply_chain_consighment](#supply_chain_consighment) | `object` | Required | cannot be null | [eFBL](supply-chain-consignment.md "https://fiata.com/digital/schemas/json/definitions/suppliy-chain-consignment.schema.json#/properties/supply_chain_consighment") |
+| [supply_chain_consignment](#supply_chain_consignment) | `object` | Required | cannot be null | [eFBL](supply-chain-consignment.md "https://fiata.com/digital/schemas/json/definitions/suppliy-chain-consignment.schema.json#/properties/supply_chain_consignment") |
 
 ## exchanged_document
 
@@ -39,11 +39,11 @@ Exchanged Document
 
 `object` ([Exchanged Document](exchanged-document.md))
 
-## supply_chain_consighment
+## supply_chain_consignment
 
 A supply chain consignment specified for a use of this master message assembly.
 
-`supply_chain_consighment`
+`supply_chain_consignment`
 
 *   is required
 
@@ -51,8 +51,8 @@ A supply chain consignment specified for a use of this master message assembly.
 
 *   cannot be null
 
-*   defined in: [eFBL](supply-chain-consignment.md "https://fiata.com/digital/schemas/json/definitions/suppliy-chain-consignment.schema.json#/properties/supply_chain_consighment")
+*   defined in: [eFBL](supply-chain-consignment.md "https://fiata.com/digital/schemas/json/definitions/suppliy-chain-consignment.schema.json#/properties/supply_chain_consignment")
 
-### supply_chain_consighment Type
+### supply_chain_consignment Type
 
 `object` ([Supply Chain Consignment](supply-chain-consignment.md))
