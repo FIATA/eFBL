@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "generate_doc": "node_modules/.bin/jsonschema2md -d ../../json-schemas -o ../generated_doc"
+  },
+  "dependencies": {
+    "@adobe/jsonschema2md": "^5.0.4"
+  }
+}

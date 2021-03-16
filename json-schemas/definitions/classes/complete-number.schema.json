@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiata.com/digital/schemas/json/definitions/classes/complete-number.schema.json",
+  "title": "Complete Number",
+  "$ref": "text.schema.json"
+}

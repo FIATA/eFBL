@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fiata.com/digital/schemas/json/definitions/classes/text.schema.json",
+  "title": "Text",
+  "description": "The text with optional localization.",
+  "type": "object",
+  "properties": {
+    "value": {
+      "description": "A character string (i.e. a finite set of characters) generally in the form of words of a language.",
+      "type": "string"
+    },
+    "language": {
+      "description": "The identifier of the language used in the corresponding text string.",
+      "$ref": "identifier.schema.json"
+    }
+  },
+  "required": ["value"],
+  "additionalProperties": false
+}
