@@ -10,12 +10,16 @@
       "$ref": "classes/identifier.schema.json"
     },
     "issueDateTime": {
-      "description": "Issue Date Time",
+      "description": "The date, time, date time or other date time value for the issuance of this exchanged document.",
       "$ref": "classes/date-time.schema.json"
     },
     "originalIssuedQuantity": {
       "description": "The number of originals issued of this exchanged document.",
       "$ref": "classes/quantity.schema.json"
+    },
+    "documentStatus": {
+      "description": "The code specifying the status of this exchanged document.",
+      "$ref": "classes/code.schema.json"
     },
     "copyIssuedQuantity": {
       "description": "The number of copies issued of this exchanged document.",
@@ -25,11 +29,23 @@
       "description": "The location where this exchanged document has been issued.",
       "$ref": "classes/logistics-location.json"
     },
+    "contractualClause": {
+      "description": "A contractual clause of this exchanged document.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "classes/identifier.schema.json"
+        },
+        "text": {
+          "$ref": "classes/text.schema.json"
+        }
+      }
+    },
     "firstSignatoryAuthentication": {
       "description": "The first or primary signature that authenticates this exchanged document.",
       "type": "object",
       "$ref": "classes/document-authentication.schema.json"
     }
   },
-  "required": ["originalIssuedQuantity", "issueLocation"]
+  "required": ["id", "issueDateTime", "originalIssuedQuantity", "documentStatus", "issueLocation", "firstSignatoryAuthentication"]
 }

@@ -9,4 +9,4 @@ Ensure you have python 3 installed on your environment and run `pip install json
 
 Once installed you can generate the documentation with a single line:
 
-`> generate-schema-doc ../json-schemas/efbl.schema.json efbl_doc`
+`> generate-schema-doc --config-file config_doc.yaml ../json-schemas/efbl.schema.json schema_doc.html`

@@ -7,7 +7,7 @@
   "properties": {
     "exchanged_document": {
       "title": "Exchange Document",
-      "description": "The header document information for a use of this master message assembly.",
+      "description": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties.",
       "$ref": "definitions/exchanged-document.schema.json"
     },
     "supply_chain_consignment": {
@@ -16,7 +16,7 @@
     }
   },
   "required": [
-    "supply_chain_consignment"
+    "exchanged_document","supply_chain_consignment"
   ],
   "additionalProperties": false
 }
