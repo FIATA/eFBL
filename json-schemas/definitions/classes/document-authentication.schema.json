@@ -9,7 +9,7 @@
       "description": "The actual date, time, date time, or other date time value of this document authentication.",
       "$ref": "date-time.schema.json"
     },
-    "identifier": {
+    "id": {
       "description": "A unique identifier for this document authentication.",
       "$ref": "identifier.schema.json"
     },
@@ -18,6 +18,6 @@
       "$ref": "text.schema.json"
     }
   },
-  "required": ["actualDateTime"],
+  "required": ["actualDateTime", "id", "statement"],
   "additionalProperties": false
 }

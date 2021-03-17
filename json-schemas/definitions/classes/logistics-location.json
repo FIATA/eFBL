@@ -18,6 +18,6 @@
       "$ref": "country-code.schema.json"
     }
   },
-  "required": [],
+  "required": ["id", "name"],
   "additionalProperties": false
 }
