@@ -1,6 +1,6 @@
 # FIATA electronic Bill Of Lading model
 
-See [Documentation](./doc/generated_doc/README.md "Generated documentation")
+See [Documentation](./doc/README.md "Generated documentation")
 
 ## Model
 
