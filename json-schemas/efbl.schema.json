@@ -6,9 +6,12 @@
   "type": "object",
   "properties": {
     "exchanged_document": {
+      "title": "Exchange Document",
+      "description": "The header document information for a use of this master message assembly.",
       "$ref": "definitions/exchanged-document.schema.json"
     },
     "supply_chain_consignment": {
+      "title": "Supply Chain Consignment",
       "$ref": "definitions/supply-chain-consignment.schema.json"
     }
   },

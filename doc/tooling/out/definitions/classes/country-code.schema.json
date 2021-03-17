@@ -1,1 +1,0 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://fiata.com/digital/schemas/json/definitions/classes/country-code.schema.json","title":"Country Code","$ref":"standardized-identifier.schema.json"}
