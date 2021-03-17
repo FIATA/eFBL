@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://fiata.com/digital/schemas/json/definitions/identifier.schema.json",
-  "title": "Identifier",
+  "$id": "https://fiata.com/digital/schemas/json/definitions/quantity.schema.json",
+  "title": "Quantity",
   "description": "A counted number of non-monetary units possibly including fractions.",
   "type": "number"
 }
