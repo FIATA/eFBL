@@ -398,6 +398,7 @@
         "transportPackage": {
           "title": "Transport Package",
           "description": "A transport package for this supply chain consignment item.",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/logisticsPackage"
           },
@@ -485,7 +486,7 @@
           "description": "A type, expressed as text, of this logistics package.",
           "type": "array",
           "items": {
-            "$ref": "classes/text.schema.json"
+            "type": "string"
           }
         },
         "shippingMarks": {
@@ -493,7 +494,7 @@
           "description": "Physical shipping marks and barcode information for this logistics package.",
           "type": "array",
           "items": {
-            "$ref": "classes/text.schema.json"
+            "type": "string"
           }
         }
       },
