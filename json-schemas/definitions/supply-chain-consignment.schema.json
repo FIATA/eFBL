@@ -28,29 +28,29 @@
     "consignor": {
       "title": "Consignor",
       "description": "The consignor party for this supply chain consignment.",
-      "$ref": "#/definitions/tradeParty"
+      "$ref": "#/$defs/tradeParty"
     },
     "consignee": {
       "title": "Consignee",
       "description": "The consignee party for this supply chain consignment.",
-      "$ref": "#/definitions/simpleTradeParty"
+      "$ref": "#/$defs/simpleTradeParty"
     },
     "ctoAgent": {
       "title": "CTO Agent",
       "description": "The party acting as the agent of the carrier for this supply chain consignment.",
-      "$ref": "#/definitions/simpleTradeParty"
+      "$ref": "#/$defs/simpleTradeParty"
     },
     "cto": {
       "title": "Combined Transport Operator (CTO)",
       "description": "The carrier party for this supply chain consignment.",
-      "$ref": "#/definitions/tradeParty"
+      "$ref": "#/$defs/tradeParty"
     },
     "notifiedParty": {
       "title": "Notified Party",
       "description": "A party who has been or will be notified about this supply chain consignment.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/simpleTradeParty"
+        "$ref": "#/$defs/simpleTradeParty"
       }
     },
     "carrierAcceptanceLocation": {
@@ -78,7 +78,7 @@
       "description": "A consignment item included in this supply chain consignment.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/consignmentItem"
+        "$ref": "#/$defs/consignmentItem"
       },
       "minItems": 1
     },
@@ -87,7 +87,7 @@
       "description": "A main carriage logistics transport movement for this supply chain consignment.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/logisticsTransportMeans"
+        "$ref": "#/$defs/logisticsTransportMeans"
       }
     },
     "applicableServiceCharge": {
@@ -95,7 +95,7 @@
       "description": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/serviceCharge"
+        "$ref": "#/$defs/serviceCharge"
       }
     }
   },
@@ -111,7 +111,7 @@
     "applicableServiceCharge"
   ],
   "additionalProperties": false,
-  "definitions": {
+  "$defs": {
     "simpleTradeParty": {
       "type": "object",
       "properties": {
@@ -136,12 +136,12 @@
         "definedContactDetails": {
           "title": "Defined Contact Details",
           "description": "A trade contact defined for this trade party.",
-          "$ref": "#/definitions/simpleTradeContact"
+          "$ref": "#/$defs/simpleTradeContact"
         },
         "postalAddress": {
           "title": "Postal Address",
           "description": "The postal address for this trade party.",
-          "$ref": "#/definitions/tradeAddress"
+          "$ref": "#/$defs/tradeAddress"
         },
         "taxRegistration": {
           "title": "Tax Registration",
@@ -156,7 +156,7 @@
           "description": "A governmental registration specified for this trade party.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/governmentRegistration"
+            "$ref": "#/$defs/governmentRegistration"
           }
         }
       },
@@ -187,12 +187,12 @@
         "definedContactDetails": {
           "title": "Defined Contact Details",
           "description": "A trade contact defined for this trade party.",
-          "$ref": "#/definitions/tradeContact"
+          "$ref": "#/$defs/tradeContact"
         },
         "postalAddress": {
           "title": "Postal Address",
           "description": "The postal address for this trade party.",
-          "$ref": "#/definitions/tradeAddress"
+          "$ref": "#/$defs/tradeAddress"
         },
         "taxRegistration": {
           "title": "Tax Registration",
@@ -207,7 +207,7 @@
           "description": "A governmental registration specified for this trade party.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/governmentRegistration"
+            "$ref": "#/$defs/governmentRegistration"
           }
         }
       },
@@ -377,14 +377,14 @@
         "cargoNatureIdentification": {
           "title": "Cargo Nature Identification",
           "description": "Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes.",
-          "$ref": "#/definitions/transportCargo"
+          "$ref": "#/$defs/transportCargo"
         },
         "transportDangerousGoods": {
           "title": "Transport Dangerous Goods",
           "description": "Dangerous goods transport details applicable to this supply chain consignment item.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/transportDangerousCode"
+            "$ref": "#/$defs/transportDangerousCode"
           }
         },
         "associatedTransportEquipment": {
@@ -392,7 +392,7 @@
           "description": "A referenced piece of transport equipment associated with this supply chain consignment item.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/transportEquipment"
+            "$ref": "#/$defs/transportEquipment"
           }
         },
         "transportPackage": {
@@ -400,7 +400,7 @@
           "description": "A transport package for this supply chain consignment item.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/logisticsPackage"
+            "$ref": "#/$defs/logisticsPackage"
           },
           "minItems": 1
         },
@@ -409,7 +409,7 @@
           "description": "A referenced piece of transport equipment associated with this supply chain consignment item.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/transportEquipment"
+            "$ref": "#/$defs/transportEquipment"
           }
         }
       },
