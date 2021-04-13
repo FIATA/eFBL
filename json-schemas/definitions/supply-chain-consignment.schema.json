@@ -541,7 +541,7 @@
       "properties": {
         "paymentArrangementCode": {
           "title": "Payment Arrangement Code ",
-          "description": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237].",
+          "description": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237]. See https://service.unece.org/trade/untdid/d04b/tred/tred4237.htm",
           "$ref": "classes/code.schema.json"
         },
         "paymentPlace": {
@@ -550,7 +550,7 @@
           "$ref": "classes/logistics-location.json"
         }
       },
-      "required": ["id"],
+      "required": [],
       "additionalProperties": false
     },
     "transportEquipment": {
