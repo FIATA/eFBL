@@ -85,10 +85,7 @@
     "mainCarriageTransportMovement": {
       "title": "Main Carriage Transport Movement",
       "description": "A main carriage logistics transport movement for this supply chain consignment.",
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/logisticsTransportMeans"
-      }
+      "$ref": "#/$defs/logisticsTransportMeans"
     },
     "applicableServiceCharge": {
       "title": "Applicable Service Charge",
