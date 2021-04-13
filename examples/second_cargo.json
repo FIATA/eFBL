@@ -1,0 +1,136 @@
+{
+  "exchanged_document": {
+    "documentStatus": {
+      "value": "TBD"
+    },
+    "id": "1234567890128ABCD",
+    "issueDateTime": {
+      "value": "2021-03-31T12:34:56.123",
+      "format": "YYYY-MM-DDThh:mm:ss.sss"
+    },
+    "firstSignatoryAuthentication": {
+      "actualDateTime": {
+        "value": "2021-03-31T12:34:56.012",
+        "format": "YYYY-MM-DDThh:mm:ss.sss"
+      },
+      "id": "12345",
+      "statement": {
+        "value": ""
+      }
+    },
+    "issueLocation": {
+      "id": "",
+      "countryCode": {
+        "value": "CH"
+      },
+      "name": {
+        "value": "Geneva, Switzerland"
+      }
+    },
+    "originalIssuedQuantity": 2
+  },
+  "supply_chain_consignment": {
+    "cargoInsuranceNotProvidedByCTO": true,
+    "consignor": {
+      "name": {
+        "value": "Keebler LLC"
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Sanford Graham"
+        },
+        "telephone":"+1.814.675.4381",
+        "mobileTelephone":"+1.814.675.4381",
+        "emailAddress":"ephraim93@mante.biz"
+      },
+      "postalAddress": {
+        "postcode": "82063",
+        "streetName": "Rohan Rapids",
+        "cityName": "Jelm",
+        "countryCode":"US",
+        "countryName": "United States"
+      }
+    },
+    "consignee": {
+      "name": {
+        "value": "TO ORDER"
+      }
+    },
+    "ctoAgent": {
+      "name": {
+        "value": "Borer Ltd"
+      }
+    },
+    "cto": {
+      "name": {
+        "value": "Mueller Inc"
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Susie Bednar"
+        },
+        "telephone":"+1-548-549-9733",
+        "mobileTelephone":"+1-548-549-9733",
+        "emailAddress":"josue.kihn@hotmail.com"
+      },
+      "postalAddress": {
+        "postcode": "43136",
+        "streetName": "464 Gisselle Crescent Suite 839",
+        "cityName": "Lithopolis, OH",
+        "countryCode":"US",
+        "countryName": "Unideted States"
+      }
+    },
+    "carrierAcceptanceLocation": {
+      "id": "9501101020023",
+      "name": {
+        "value": "Curieweg 24, ALPHEN AAN DEN RIJN, 2408 BZ, NL"
+      }
+    },
+    "consigneeReceiptLocation": {
+      "id": "9501101020023",
+      "name": {
+        "value": "Marshallweg 1, VEGHEL, 5466 AH, NL"
+      }
+    },
+    "numberOfPackages": 42,
+    "includedConsignmentItem": [{
+      "goodsTypeCode": {
+        "value": "010481"
+      },
+      "grossWeight": {
+        "value": 1650.00,
+        "unit": "kg"
+      },
+      "grossVolume": {
+        "value": 42,
+        "unit": "m2"
+      },
+      "cargoNatureIdentification": {
+        "identificationText": [
+          {
+            "value": "Ever Given"
+          }
+        ]
+      },
+      "transportPackage": [{
+        "itemQuantity": 42
+      }
+      ]
+    }],
+    "applicableServiceCharge": [{
+      "paymentArrangementCode": {
+        "value": "A",
+        "agency": "UN/EDIFACT"
+      }
+    }],
+    "mainCarriageTransportMovement": [{
+      "typeCode": {
+        "value": "503"
+      },
+      "typeText": {
+        "value": "Wood chips vessel"
+      }
+    }]
+  }
+}
