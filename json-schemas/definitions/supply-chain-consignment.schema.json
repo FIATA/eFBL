@@ -476,18 +476,12 @@
         "typeCode": {
           "title": "Type Code",
           "description": "A code specifying the type of logistics package.",
-          "type": "array",
-          "items": {
-            "$ref": "classes/code.schema.json"
-          }
+          "$ref": "classes/code.schema.json"
         },
         "typeText": {
           "title": "Type Text",
           "description": "A type, expressed as text, of this logistics package.",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+          "type": "string"
         },
         "shippingMarks": {
           "title": "Shipping Marks",
