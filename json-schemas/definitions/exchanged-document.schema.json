@@ -47,5 +47,5 @@
       "$ref": "classes/document-authentication.schema.json"
     }
   },
-  "required": ["id", "issueDateTime", "originalIssuedQuantity", "documentStatus", "issueLocation", "firstSignatoryAuthentication"]
+  "required": ["issueDateTime", "originalIssuedQuantity", "documentStatus", "issueLocation", "firstSignatoryAuthentication"]
 }
