@@ -3,7 +3,6 @@
     "documentStatus": {
       "value": "TBD"
     },
-    "id": "1234567890128ABCD",
     "issueDateTime": {
       "value": "2021-03-31T12:34:56.123",
       "format": "YYYY-MM-DDThh:mm:ss.sss"
