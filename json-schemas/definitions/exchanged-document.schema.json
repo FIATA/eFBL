@@ -27,7 +27,7 @@
     },
     "issueLocation": {
       "description": "The location where this exchanged document has been issued.",
-      "$ref": "classes/logistics-location.json"
+      "$ref": "classes/logistics-location.schema.json"
     },
     "contractualClause": {
       "description": "A contractual clause of this exchanged document.",

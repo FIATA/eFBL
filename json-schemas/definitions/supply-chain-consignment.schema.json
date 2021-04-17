@@ -56,22 +56,22 @@
     "carrierAcceptanceLocation": {
       "title": "Carrier Acceptance Location",
       "description": "The location where this supply chain consignment will be, or has been, accepted by the carrier.",
-      "$ref": "classes/logistics-location.json"
+      "$ref": "classes/logistics-location.schema.json"
     },
     "consigneeReceiptLocation": {
       "title": "Consignee Receipt Location",
       "description": "The location at which this supply chain consignment will be or has been received by the consignee.",
-      "$ref": "classes/logistics-location.json"
+      "$ref": "classes/logistics-location.schema.json"
     },
     "loadingBaseportLocation": {
       "title": "Loading Baseport Location",
       "description": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract.",
-      "$ref": "classes/logistics-location.json"
+      "$ref": "classes/logistics-location.schema.json"
     },
     "unloadingBaseportLocation": {
       "title": "Unloading Baseport Location",
       "description": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract.",
-      "$ref": "classes/logistics-location.json"
+      "$ref": "classes/logistics-location.schema.json"
     },
     "includedConsignmentItem": {
       "title": "Include Consignment Item",
@@ -538,7 +538,7 @@
         "paymentPlace": {
           "title": "Payment Place",
           "description": "The location of the place of payment of this logistics service charge.",
-          "$ref": "classes/logistics-location.json"
+          "$ref": "classes/logistics-location.schema.json"
         }
       },
       "required": [],
