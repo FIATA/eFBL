@@ -43,9 +43,9 @@
     },
     "firstSignatoryAuthentication": {
       "description": "The first or primary signature that authenticates this exchanged document.",
-      "type": "object",
       "$ref": "classes/document-authentication.schema.json"
     }
   },
-  "required": ["issueDateTime", "originalIssuedQuantity", "documentStatus", "issueLocation", "firstSignatoryAuthentication"]
+  "required": ["issueDateTime", "originalIssuedQuantity", "documentStatus", "issueLocation", "firstSignatoryAuthentication"],
+  "additionalProperties": false
 }
