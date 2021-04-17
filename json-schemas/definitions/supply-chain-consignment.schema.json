@@ -561,7 +561,9 @@
             "$ref": "classes/standardized-identifier.schema.json"
           }
         }
-      }
+      },
+      "required": [],
+      "additionalProperties": false
     }
   }
 }
