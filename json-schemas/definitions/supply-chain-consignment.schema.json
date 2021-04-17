@@ -345,6 +345,7 @@
     },
     "consignmentItem": {
       "description": "A consignment item included in this supply chain consignment.",
+      "type": "object",
       "properties": {
         "goodsTypeCode": {
           "title": "Goods Type Code",
