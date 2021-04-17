@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://fiata.com/digital/schemas/json/definitions/indicator.schema.json",
+  "$id": "https://fiata.com/digital/schemas/json/definitions/classes/indicator.schema.json",
   "title": "Indicator",
   "description": "An indicator with true/false, yes/no value",
   "type": "boolean"
