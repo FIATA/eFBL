@@ -39,7 +39,9 @@
         "text": {
           "$ref": "classes/text.schema.json"
         }
-      }
+      },
+      "required": ["text"],
+      "additionalProperties": false
     },
     "firstSignatoryAuthentication": {
       "description": "The first or primary signature that authenticates this exchanged document.",
