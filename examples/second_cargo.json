@@ -38,15 +38,21 @@
         "personName": {
           "value": "Sanford Graham"
         },
-        "telephone":"+1.814.675.4381",
-        "mobileTelephone":"+1.814.675.4381",
-        "emailAddress":"ephraim93@mante.biz"
+        "telephone": {
+          "value": "+1.814.675.4381"
+        },
+        "mobileTelephone":{
+          "value": "+1.814.675.4381"
+        },
+        "emailAddress":{
+          "value": "ephraim93@mante.biz"
+        }
       },
       "postalAddress": {
         "postcode": "82063",
         "streetName": "Rohan Rapids",
         "cityName": "Jelm",
-        "countryCode":"US",
+        "countryCode":{"value":  "US"},
         "countryName": "United States"
       }
     },
@@ -73,15 +79,15 @@
         "personName": {
           "value": "Susie Bednar"
         },
-        "telephone":"+1-548-549-9733",
-        "mobileTelephone":"+1-548-549-9733",
-        "emailAddress":"josue.kihn@hotmail.com"
+        "telephone":{"value": "+1-548-549-9733"},
+        "mobileTelephone":{"value": "+1-548-549-9733"},
+        "emailAddress":{"value": "josue.kihn@hotmail.com"},
       },
       "postalAddress": {
         "postcode": "43136",
         "streetName": "464 Gisselle Crescent Suite 839",
         "cityName": "Lithopolis, OH",
-        "countryCode":"US",
+        "countryCode":{"value":  "US"},
         "countryName": "United States"
       }
     },
