@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIATA eFBL validation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ajv/8.1.0/ajv2019.bundle.js"
+            integrity="sha512-6r2/+OeLbM8SCATaYPt6vzCLd1COSKChiQlHfvMmCLCR20Oh/2mbgxuyoZDxlad7R5r9TaxW8dAe8oqXg+Kikg=="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/better-ajv-errors@0.7.0/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://github.com/FIATA/eFBL">
+            <img src="https://fiata.com/typo3conf/ext/wb_template/i/header/logo.png"/>
+        </a>
+    </div>
+</nav>
+<section class="hero is-info is-small">
+    <div class="hero-body ">
+        <p class="title">
+            eFBL Validator
+        </p>
+        <p class="subtitle">
+            FIATA
+        </p>
+    </div>
+</section>
+
+<section class="container py-2">
+    <div class="box">
+        You can copy paste a json in the textbox below or fetch a json by inserting an address in the input below
+    </div>
+</section>
+
+<section class="container my-2">
+    <div x-data="validator()">
+        <div class="notification is-danger" x-show="validationError">
+            <div class="is-size-2">Validation errors</div>
+            <table class="table is-fullwidth is-striped has-background-danger-light">
+                <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Data</th>
+                    <th>Keyword</th>
+                    <th>Message</th>
+                </tr>
+                </thead>
+                <tbody>
+                <template x-for="error in validationErrors" :key="error">
+                    <tr>
+                        <td>
+                            <div x-text="error.instancePath"></div>
+                        </td>
+                        <td>
+                            <div x-text="error.data"></div>
+                        </td>
+                        <td>
+                            <div x-text="error.keyword"></div>
+                        </td>
+                        <td>
+                            <div x-text="error.message"></div>
+                        </td>
+                    </tr>
+                </template>
+                </tbody>
+            </table>
+        </div>
+        <div class="notification is-success" x-show="validationSuccess">The JSON is valid</div>
+        <div class="box">
+            <div class="field">
+                <div class="field-body">
+                    <div class="field">
+                        <button class="button is-primary" @click="validateSource">Validate</button>
+                    </div>
+                    <div class="field">
+                        <p class="control is-expanded">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input class="input" type="text" placeholder="URL" x-model="sourceURL">
+                            </div>
+                            <div class="control">
+                                <a class="button is-info" @click="fetchURL">
+                                    Fetch
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <textarea class="textarea" placeholder="JSON to validate" rows="24" x-model="jsonSource"></textarea>
+        </div>
+
+    </div>
+
+</section>
+</body>
+<script>
+  const Ajv = window.ajv2019
+  const ajv = new Ajv({allErrors: true, verbose: true, strict: "log"})
+
+  function validator() {
+    return {
+      jsonSource: '',
+      sourceURL: "https://raw.githubusercontent.com/FIATA/eFBL/main/examples/second_cargo.json",
+      validationSuccess: false,
+      validationError: false,
+      validationErrors: '',
+
+      fetchURL() {
+        fetch(this.sourceURL)
+          .then(response => response.text())
+          .then(source => this.jsonSource = source)
+      },
+      validateSource() {
+        const validate = ajv.getSchema("efbl.schema.json")
+        const result = validate(JSON.parse(this.jsonSource))
+        this.validationSuccess = !(validate.errors)
+        this.validationError = !!(validate.errors)
+        this.validationErrors = validate.errors
+      }
+    }
+  }
+
+  Promise.all([
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/efbl.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/exchanged-document.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/supply-chain-consignment.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/amount.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/code.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/complete-number.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/country-code.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/date-time.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/document-authentication.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/identifier.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/indicator.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/logistics-location.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/measure.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/quantity.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/standardized-identifier.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/text.schema.json"),
+    fetch("https://raw.githubusercontent.com/FIATA/eFBL/main/json-schemas/definitions/classes/uri.schema.json")
+  ])
+    .then((results) => Promise.all(results.map(r => r.json())))
+    .then((schemas) => {
+      schemas.forEach(schema => {
+        let key = schema.$id
+        /*
+        if (key.indexOf("/classes") >= 0) {
+          key = key.substring(key.indexOf("classes"))
+        } else */
+        if (key.indexOf("/definitions") >= 0) {
+          key = key.substring(key.indexOf("definitions"))
+        } else {
+          key = "efbl.schema.json"
+        }
+        console.log("Loading schema '" + schema.$id + "' with key " + key)
+        delete schema.$id
+        delete schema.$schema
+        ajv.addSchema(schema, key)
+      })
+    }).catch((err) => {
+    console.log(err);
+  })
+
+
+</script>
+</html>
