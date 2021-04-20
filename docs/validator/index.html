@@ -118,11 +118,17 @@
           .then(source => this.jsonSource = source)
       },
       validateSource() {
-        const validate = ajv.getSchema("efbl.schema.json")
-        const result = validate(JSON.parse(this.jsonSource))
-        this.validationSuccess = !(validate.errors)
-        this.validationError = !!(validate.errors)
-        this.validationErrors = validate.errors
+        try {
+          const validate = ajv.getSchema("efbl.schema.json")
+          const result = validate(JSON.parse(this.jsonSource))
+          this.validationSuccess = !(validate.errors)
+          this.validationError = !!(validate.errors)
+          this.validationErrors = validate.errors
+        } catch (error) {
+          this.validationSuccess = false
+          this.validationError = true
+          this.validationErrors = [{instancePath: '', data:'', keyword:'Invalid JSON', message:error.message}]
+        }
       }
     }
   }
