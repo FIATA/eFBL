@@ -11,7 +11,7 @@ The general model below is indicative only. Please refer to the json-schema and 
 
 ![eFBL Model](docs/model.gif)
 
-## Codde List recommendations
+## Code List Recommendations
 
 https://unece.org/trade/uncefact/cl-recommendations
 
