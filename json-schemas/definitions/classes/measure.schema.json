@@ -9,7 +9,7 @@
       "type": "number"
     },
     "unit": {
-      "description": "The unit of the measure.",
+      "description": "The unit of the measure. Please use unit symbols as defined in the CEFACT/ICG/2010/IC013 Recommendation N°. 20 - Revision 7 available at https://unece.org/trade/uncefact/cl-recommendations",
       "$ref": "identifier.schema.json"
     }
   },
