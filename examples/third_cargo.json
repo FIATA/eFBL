@@ -1,0 +1,228 @@
+{
+  "exchanged_document": {
+    "documentStatus": {
+      "value": "TBD"
+    },
+    "issueDateTime": {
+      "value": "2021-03-31T12:34:56.123",
+      "format": "YYYY-MM-DDThh:mm:ss.sss"
+    },
+    "firstSignatoryAuthentication": {
+      "actualDateTime": {
+        "value": "2021-03-31T12:34:56.012",
+        "format": "YYYY-MM-DDThh:mm:ss.sss"
+      },
+      "id": "12345",
+      "statement": {
+        "value": ""
+      }
+    },
+    "issueLocation": {
+      "id": "9501101020023",
+      "countryCode": {
+        "value": "CH"
+      },
+      "name": {
+        "value": "Geneva, Switzerland"
+      }
+    },
+    "originalIssuedQuantity": 2
+  },
+  "supply_chain_consignment": {
+    "cargoInsuranceNotProvidedByCTO": true,
+    "consignor": {
+      "name": {
+        "value": "Keebler LLC"
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Sanford Graham"
+        },
+        "telephone": {
+          "value": "+1.814.675.4381"
+        },
+        "mobileTelephone":{
+          "value": "+1.814.675.4381"
+        },
+        "emailAddress":{
+          "value": "ephraim93@mante.biz"
+        }
+      },
+      "postalAddress": {
+        "postcode": "82063",
+        "streetName": "Rohan Rapids\nAppartment 10",
+        "cityName": "Jelm",
+        "countryCode":{"value":  "US"},
+        "countryName": "United States"
+      }
+    },
+    "consignee": {
+      "name": {
+        "value": "TO ORDER"
+      }
+    },
+    "ctoAgent": {
+      "name": {
+        "value": "Borer Ltd"
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Marie J Rivera"
+        },
+        "telephone": {
+          "value": "+1.218-349-6374"
+        },
+        "mobileTelephone":{
+          "value": "+1.215-219-6242"
+        },
+        "emailAddress":{
+          "value": "6i8ukfs1nc@temporary-mail.net"
+        }
+      },
+      "postalAddress": {
+        "postcode": "19187",
+        "streetName": "3000 Ferrell Street",
+        "cityName": "PHILADELPHIA",
+        "countryCode":{"value":  "US"},
+        "countryName": "United States"
+      }
+    },
+    "cto": {
+      "id": [{
+        "value": "1234567890",
+        "identificationSchemeAgency": "SPEDLOGSWISS"
+      }
+      ],
+      "name": {
+        "value": "Mueller Inc"
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Susie Bednar"
+        },
+        "telephone":{"value": "+1-548-549-9733"},
+        "mobileTelephone":{"value": "+1-548-549-9733"},
+        "emailAddress":{"value": "josue.kihn@hotmail.com"}
+      },
+      "postalAddress": {
+        "postcode": "43136",
+        "streetName": "464 Gisselle Crescent Suite 839",
+        "cityName": "Lithopolis, OH",
+        "countryCode":{"value":  "US"},
+        "countryName": "United States"
+      }
+    },
+    "notifiedParty": [
+      {
+        "id": [{
+          "value": "0987654321",
+          "identificationSchemeAgency": "SPEDLOGSWISS"
+        }
+        ],
+        "name": {
+          "value": "Blick-Ledner"
+        },
+        "definedContactDetails": {
+          "personName": {
+            "value": "Toby T Colls"
+          },
+          "telephone":{"value": "(08) 8228 1119"},
+          "mobileTelephone":{"value": "(08) 8228 1119"},
+          "emailAddress":{"value": "josue.kihn@hotmail.com"}
+        },
+        "postalAddress": {
+          "postcode": "5264",
+          "streetName": "56 Church Street",
+          "cityName": "MENINGIE WEST",
+          "countryCode":{"value":  "AU"},
+          "countryName": "Australia"
+        }
+      }
+    ],
+    "carrierAcceptanceLocation": {
+      "id": "9501101020023",
+      "name": {
+        "value": "Curieweg 24, ALPHEN AAN DEN RIJN, 2408 BZ, NL"
+      }
+    },
+    "consigneeReceiptLocation": {
+      "id": "9501101020023",
+      "name": {
+        "value": "Marshallweg 1, VEGHEL, 5466 AH, NL"
+      }
+    },
+    "numberOfPackages": 42,
+    "includedConsignmentItem": [{
+      "goodsTypeCode": {
+        "value": "010481"
+      },
+      "grossWeight": {
+        "value": 1650.00,
+        "unit": "kg"
+      },
+      "grossVolume": {
+        "value": 42,
+        "unit": "m2"
+      },
+      "cargoNatureIdentification": {
+        "identificationText": [
+          {
+            "value": "Ever Given"
+          }
+        ]
+      },
+      "transportPackage": [{
+        "itemQuantity": 42,
+        "shippingMarks": ["GESU3721957"],
+        "typeText": "20GP"
+      }
+      ]
+    }],
+    "applicableServiceCharge": [{
+      "paymentArrangementCode": {
+        "value": "A",
+        "agency": "UN/EDIFACT"
+      },
+      "paymentPlace": {
+        "name": {
+          "value": "Kastanienallee 12, 26579 Hinte, Niedersachsen, Germany"
+        },
+        "id": "9501101020023"
+      }
+    }],
+    "loadingBaseportLocation": {
+      "countryCode": {
+        "value": "CN"
+      },
+      "id": "012345678901234567",
+      "name": {
+        "value": "Port of Ningbo"
+      }
+    },
+    "unloadingBaseportLocation": {
+      "countryCode": {
+        "value": "NL"
+      },
+      "id": "012345678901234567",
+      "name": {
+        "value": "Port of Rotterdam"
+      }
+    },
+    "mainCarriageTransportMovement": [{
+      "typeCode": {
+        "value": "503"
+      },
+      "typeText": {
+        "value": "Wood chips vessel"
+      }
+    }],
+    "declaredValueForCarriageAmount": {
+      "value": 10000000,
+      "currency": "EUR"
+    },
+    "totalChargeAmount": {
+      "value": 15000000,
+      "currency": "EUR"
+    }
+  }
+}
