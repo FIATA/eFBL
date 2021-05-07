@@ -90,7 +90,7 @@
     "cto": {
       "id": [{
         "value": "1234567890",
-        "identificationSchemeAgency": "SPEDLOGSWISS"
+        "identificationSchemeAgency": "FIATA"
       }
       ],
       "name": {
