@@ -4,6 +4,7 @@ See [Documentation](https://fiata.github.io/eFBL/schema_doc.html)
 
 You can use the online [validator](https://fiata.github.io/eFBL/validator/) we have provided here: https://fiata.github.io/eFBL/validator/
 
+You can use the online [verification page](https://fiata.github.io/eFBL/verification-page/) to validate produced eFBL PDFs
 
 ## Model
 
