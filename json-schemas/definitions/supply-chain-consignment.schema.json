@@ -278,7 +278,7 @@
           }
         }
       },
-      "required": ["personName", "telephone", "mobileTelephone", "emailAddress"],
+      "required": ["personName", "telephone", "emailAddress"],
       "additionalProperties": false
     },
     "tradeAddress": {
