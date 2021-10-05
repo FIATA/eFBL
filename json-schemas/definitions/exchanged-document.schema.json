@@ -14,8 +14,8 @@
       "$ref": "classes/date-time.schema.json"
     },
     "originalIssuedQuantity": {
-      "description": "The number of originals issued of this exchanged document.",
-      "$ref": "classes/quantity.schema.json"
+      "description": "The number of originals issued of this exchanged document. This may include the number in letters",
+      "type": "string"
     },
     "documentStatus": {
       "description": "The code specifying the status of this exchanged document.",
