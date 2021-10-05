@@ -98,7 +98,6 @@
     }
   },
   "required": [
-    "cargoInsuranceNotProvidedByCTO",
     "numberOfPackages",
     "consignor",
     "includedConsignmentItem",
