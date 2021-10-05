@@ -10,10 +10,11 @@
       "description": "Freight Amount. The total monetary value of all freight and other service charges for this supply chain consignment.",
       "$ref": "classes/amount.schema.json"
     },
-    "cargoInsuranceNotProvidedByCTO": {
-      "title": "Cargo Insurance Not Provided By CTO.",
+    "cargoInsuranceProvidedByCTO": {
+      "title": "Cargo Insurance Provided By CTO.",
       "description": "Cargo Insurance through the undersigned. The indication of whether or not this supply chain consignment has a nil value for insurance.",
-      "$ref": "classes/indicator.schema.json"
+      "$ref": "classes/indicator.schema.json",
+      "default": false
     },
     "numberOfPackages": {
       "title": "Number Of Packages",
