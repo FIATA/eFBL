@@ -100,8 +100,6 @@
     "cargoInsuranceNotProvidedByCTO",
     "numberOfPackages",
     "consignor",
-    "carrierAcceptanceLocation",
-    "consigneeReceiptLocation",
     "includedConsignmentItem",
     "applicableServiceCharge"
   ],
