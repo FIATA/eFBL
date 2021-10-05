@@ -10,7 +10,7 @@
       "$ref": "classes/identifier.schema.json"
     },
     "issueDateTime": {
-      "description": "The date, time, date time or other date time value for the issuance of this exchanged document.",
+      "description": "Date of issue. The date, time, date time or other date time value for the issuance of this exchanged document.",
       "$ref": "classes/date-time.schema.json"
     },
     "originalIssuedQuantity": {
@@ -26,11 +26,11 @@
       "$ref": "classes/quantity.schema.json"
     },
     "issueLocation": {
-      "description": "The location where this exchanged document has been issued.",
+      "description": "Place of issue. The location where this exchanged document has been issued.",
       "$ref": "classes/logistics-location.schema.json"
     },
     "contractualClause": {
-      "description": "A contractual clause of this exchanged document.",
+      "description": "Contractual clauses. A contractual clause of this exchanged document.",
       "type": "object",
       "properties": {
         "id": {

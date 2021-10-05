@@ -6,13 +6,13 @@
   "type": "object",
   "properties": {
     "totalChargeAmount": {
-      "title": "Total Charge Amount",
-      "description": "The total monetary value of all freight and other service charges for this supply chain consignment.",
+      "title": "Total Charge Amount.",
+      "description": "Freight Amount. The total monetary value of all freight and other service charges for this supply chain consignment.",
       "$ref": "classes/amount.schema.json"
     },
     "cargoInsuranceNotProvidedByCTO": {
-      "title": "Cargo Insurance Not Provided By CTO",
-      "description": "The indication of whether or not this supply chain consignment has a nil value for insurance.",
+      "title": "Cargo Insurance Not Provided By CTO.",
+      "description": "Cargo Insurance through the undersigned. The indication of whether or not this supply chain consignment has a nil value for insurance.",
       "$ref": "classes/indicator.schema.json"
     },
     "numberOfPackages": {
@@ -22,22 +22,22 @@
     },
     "declaredValueForCarriageAmount": {
       "title": "Declared Value For Carriage Amount",
-      "description": "The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.",
+      "description": "Declared value for ad valorem rate according to the declaration of the consignor. The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.",
       "$ref": "classes/amount.schema.json"
     },
     "consignor": {
       "title": "Consignor",
-      "description": "The consignor party for this supply chain consignment.",
+      "description": "Consignor. The consignor party for this supply chain consignment.",
       "$ref": "#/$defs/tradeParty"
     },
     "consignee": {
       "title": "Consignee",
-      "description": "The consignee party for this supply chain consignment.",
+      "description": "Consigned to order of. The consignee party for this supply chain consignment.",
       "$ref": "#/$defs/simpleTradeParty"
     },
     "ctoAgent": {
       "title": "CTO Agent",
-      "description": "The party acting as the agent of the carrier for this supply chain consignment.",
+      "description": "For delivery of goods please apply to. The party acting as the agent of the carrier for this supply chain consignment.",
       "$ref": "#/$defs/simpleTradeParty"
     },
     "cto": {
@@ -47,7 +47,7 @@
     },
     "notifiedParty": {
       "title": "Notified Party",
-      "description": "A party who has been or will be notified about this supply chain consignment.",
+      "description": "Notify address. A party who has been or will be notified about this supply chain consignment.",
       "type": "array",
       "items": {
         "$ref": "#/$defs/simpleTradeParty"
@@ -55,22 +55,22 @@
     },
     "carrierAcceptanceLocation": {
       "title": "Carrier Acceptance Location",
-      "description": "The location where this supply chain consignment will be, or has been, accepted by the carrier.",
+      "description": "Place of delivery. The location where this supply chain consignment will be, or has been, accepted by the carrier.",
       "$ref": "classes/logistics-location.schema.json"
     },
     "consigneeReceiptLocation": {
       "title": "Consignee Receipt Location",
-      "description": "The location at which this supply chain consignment will be or has been received by the consignee.",
+      "description": "Place of receipt. The location at which this supply chain consignment will be or has been received by the consignee.",
       "$ref": "classes/logistics-location.schema.json"
     },
     "loadingBaseportLocation": {
       "title": "Loading Baseport Location",
-      "description": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract.",
+      "description": "Port of loading. The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract.",
       "$ref": "classes/logistics-location.schema.json"
     },
     "unloadingBaseportLocation": {
       "title": "Unloading Baseport Location",
-      "description": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract.",
+      "description": "Port of discharge. The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract.",
       "$ref": "classes/logistics-location.schema.json"
     },
     "includedConsignmentItem": {
@@ -89,7 +89,7 @@
     },
     "applicableServiceCharge": {
       "title": "Applicable Service Charge",
-      "description": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges.",
+      "description": "Freight payable at. A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges.",
       "type": "array",
       "items": {
         "$ref": "#/$defs/serviceCharge"
@@ -349,12 +349,12 @@
       "properties": {
         "goodsTypeCode": {
           "title": "Goods Type Code",
-          "description": "The code specifying the type of supply chain consignment item.",
+          "description": "Description of goods. The code specifying the type of supply chain consignment item.",
           "$ref": "classes/code.schema.json"
         },
         "declaredValueForCarriageAmount": {
           "title": "Declared Value For Carriage Amount",
-          "description": "The monetary value of this supply chain consignment item as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.",
+          "description": "Declared value for ad valorem reate according to the declaration of the consignor. The monetary value of this supply chain consignment item as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.",
           "$ref": "classes/amount.schema.json"
         },
         "insuranceValueAmount": {
@@ -364,22 +364,22 @@
         },
         "grossWeight": {
           "title": "Gross Weight",
-          "description": "A measure of the gross weight (mass) of this supply chain consignment item which includes packaging but excludes any transport equipment.",
+          "description": "Gross weight. A measure of the gross weight (mass) of this supply chain consignment item which includes packaging but excludes any transport equipment.",
           "$ref": "classes/measure.schema.json"
         },
         "grossVolume": {
           "title": "Gross Volume",
-          "description": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item.",
+          "description": "Measurement. A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item.",
           "$ref": "classes/measure.schema.json"
         },
         "cargoNatureIdentification": {
           "title": "Cargo Nature Identification",
-          "description": "Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes.",
+          "description": "Description of goods. Transport cargo details of this supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes.",
           "$ref": "#/$defs/transportCargo"
         },
         "transportDangerousGoods": {
           "title": "Transport Dangerous Goods",
-          "description": "Dangerous goods transport details applicable to this supply chain consignment item.",
+          "description": "Description of goods. Dangerous goods transport details applicable to this supply chain consignment item.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/transportDangerousCode"
@@ -387,7 +387,7 @@
         },
         "associatedTransportEquipment": {
           "title": "Associated Transport Equipment",
-          "description": "A referenced piece of transport equipment associated with this supply chain consignment item.",
+          "description": "Marks and Numbers. A referenced piece of transport equipment associated with this supply chain consignment item.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/transportEquipment"
@@ -395,7 +395,7 @@
         },
         "transportPackage": {
           "title": "Transport Package",
-          "description": "A transport package for this supply chain consignment item.",
+          "description": "Number and kind of packages. A transport package for this supply chain consignment item.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/logisticsPackage"
