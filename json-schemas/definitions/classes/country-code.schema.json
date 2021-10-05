@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://fiata.com/digital/schemas/json/definitions/classes/country-code.schema.json",
-  "title": "Country Code",
-  "$ref": "standardized-identifier.schema.json"
+  "title": "Country Code. Must follow the ISO-3166-1 Alpha-2 Code",
+  "type": "string",
+  "pattern": "^[A-Z]{2}$"
 }
