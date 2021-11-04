@@ -16,6 +16,17 @@
       "$ref": "classes/indicator.schema.json",
       "default": false
     },
+    "insurancePolicyNumber": {
+      "title": "Cargo Insurance Policy Number",
+      "description": "If this supply chain consignment is insured, this field contains the policy number.",
+      "type": "string"
+    },
+    "insurancePolicyCompany": {
+      "title": "Cargo Insurance Company",
+      "description": "If this supply chain consignment is insured, this field contains the name of the insurance company issuing the policy.",
+      "type": "string"
+    },
+
     "numberOfPackages": {
       "title": "Number Of Packages",
       "description": "The number of packages within this supply chain consignment.",
@@ -515,6 +526,11 @@
             "title": "Name",
             "description": "The name, expressed as text, of this logistics means of transport.",
             "$ref": "classes/text.schema.json"
+          },
+          "voyageNumber": {
+            "title": "Voyage Number",
+            "description": "The unique identifier for this logistics transport movement, such as voyage number, flight number, or trip number",
+            "$ref": "classes/standardized-identifier.schema.json"
           }
         },
         "required": ["typeText"],
