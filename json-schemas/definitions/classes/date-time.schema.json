@@ -10,7 +10,7 @@
       "type": "string"
     },
     "format": {
-      "description": "The format of the date/time content.",
+      "description": "The format of the date/time content. The default format is the standard combined date and time representation as defined in the ISO 8601. The language of format is the one defined in the same ISO 8601. See https://www.iso.org/obp/ui/#iso:std:iso:8601:-1:ed-1:v1:en",
       "type": "string"
     }
   },
