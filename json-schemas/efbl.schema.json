@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://fiata.com/digital/schemas/json/release/20211104/efbl.schema.json",
+  "$id": "https://fiata.com/digital/schemas/json/release/20220110/efbl.schema.json",
   "title": "eFBL",
-  "description": "electronic FIATA Bill of Lading RELEASE 20211104",
+  "description": "electronic FIATA Bill of Lading RELEASE 20220110",
   "type": "object",
   "properties": {
     "exchanged_document": {
