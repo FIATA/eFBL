@@ -26,7 +26,6 @@
       "description": "If this supply chain consignment is insured, this field contains the name of the insurance company issuing the policy.",
       "type": "string"
     },
-
     "numberOfPackages": {
       "title": "Number Of Packages",
       "description": "The number of packages within this supply chain consignment.",
@@ -106,15 +105,13 @@
       "items": {
         "$ref": "#/$defs/serviceCharge"
       }
+    },
+    "handling": {
+      "title": "Handling",
+      "description": "Handling of goods details and instructions",
+      "$ref": "#/$defs/handling"
     }
   },
-  "required": [
-    "numberOfPackages",
-    "consignor",
-    "includedConsignmentItem",
-    "applicableServiceCharge"
-  ],
-  "additionalProperties": false,
   "$defs": {
     "simpleTradeParty": {
       "type": "object",
@@ -164,7 +161,9 @@
           }
         }
       },
-      "required": ["name"],
+      "required": [
+        "name"
+      ],
       "additionalProperties": false
     },
     "tradeParty": {
@@ -215,7 +214,11 @@
           }
         }
       },
-      "required": ["name", "definedContactDetails", "postalAddress"],
+      "required": [
+        "name",
+        "definedContactDetails",
+        "postalAddress"
+      ],
       "additionalProperties": false
     },
     "simpleTradeContact": {
@@ -250,7 +253,9 @@
           }
         }
       },
-      "required": ["personName"],
+      "required": [
+        "personName"
+      ],
       "additionalProperties": false
     },
     "tradeContact": {
@@ -285,7 +290,11 @@
           }
         }
       },
-      "required": ["personName", "telephone", "emailAddress"],
+      "required": [
+        "personName",
+        "telephone",
+        "emailAddress"
+      ],
       "additionalProperties": false
     },
     "tradeAddress": {
@@ -327,7 +336,13 @@
           "type": "string"
         }
       },
-      "required": ["postcode", "streetName", "cityName", "countryCode", "countryName"],
+      "required": [
+        "postcode",
+        "streetName",
+        "cityName",
+        "countryCode",
+        "countryName"
+      ],
       "additionalProperties": false
     },
     "governmentRegistration": {
@@ -416,6 +431,11 @@
           "items": {
             "$ref": "#/$defs/transportEquipment"
           }
+        },
+        "originTradeCountry": {
+          "title": "Origin Country",
+          "description": "The country of origin where this supply chain consignment item has been produced.",
+          "$ref": "classes/country-code.schema.json"
         }
       },
       "required": [
@@ -497,7 +517,9 @@
           }
         }
       },
-      "required": ["itemQuantity"],
+      "required": [
+        "itemQuantity"
+      ],
       "additionalProperties": false
     },
     "logisticsTransportMeans": {
@@ -531,9 +553,16 @@
             "title": "Voyage Number",
             "description": "The unique identifier for this logistics transport movement, such as voyage number, flight number, or trip number",
             "$ref": "classes/standardized-identifier.schema.json"
+          },
+          "stageCode": {
+            "title": "Stage Code",
+            "description": "The code specifying the stage of this logistics transport movement.",
+            "$ref": "classes/code.schema.json"
           }
         },
-        "required": ["typeText"],
+        "required": [
+          "typeText"
+        ],
         "additionalProperties": false
       },
       "minItems": 1
@@ -572,6 +601,54 @@
           "type": "array",
           "items": {
             "$ref": "classes/standardized-identifier.schema.json"
+          }
+        },
+        "tareWeight": {
+          "description": "The measure of the tare weight (mass) of this piece of logistics transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories.",
+          "$ref": "classes/measure.schema.json"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "handlingInstruction": {
+      "description": "Specific handling instruction for this consignment.",
+      "type": "object",
+      "properties": {
+        "temperatureSetting": {
+          "title": "Temperature Setting",
+          "description": "A transport range from a minimum to a maximum",
+          "type": "object",
+          "properties": {
+            "minimumValue": {
+              "title": "Minimum Value",
+              "description": "The measure of the lowest value of this transport setting temperature, such as a minimum temperature value of four degrees Celsius.",
+              "$ref": "classes/measure.schema.json"
+            },
+            "maximumValue": {
+              "title": "Maximum Value",
+              "description": "The measure of the highest value of this transport setting temperature, such as a maximum temperature value of fourteen degrees Celsius.",
+              "$ref": "classes/measure.schema.json"
+            }
+          },
+          "required": ["minimumValue", "maximumValue"],
+          "additionalProperties": false
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "handling": {
+      "title": "Handling",
+      "description": "Handling of goods details and instructions.",
+      "type": "object",
+      "properties": {
+        "handlingInstructions": {
+          "title": "Handling Instructions",
+          "description": "Special handling instructions",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/handlingInstruction"
           }
         }
       },
