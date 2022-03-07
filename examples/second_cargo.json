@@ -19,14 +19,12 @@
     },
     "issueLocation": {
       "id": "",
-      "countryCode": {
-        "value": "CH"
-      },
+      "countryCode": "CH",
       "name": {
         "value": "Geneva, Switzerland"
       }
     },
-    "originalIssuedQuantity": 2
+    "originalIssuedQuantity": "2"
   },
   "supply_chain_consignment": {
     "cargoInsuranceNotProvidedByCTO": true,
@@ -52,7 +50,7 @@
         "postcode": "82063",
         "streetName": "Rohan Rapids",
         "cityName": "Jelm",
-        "countryCode":{"value":  "US"},
+        "countryCode":"US",
         "countryName": "United States"
       }
     },
@@ -87,7 +85,7 @@
         "postcode": "43136",
         "streetName": "464 Gisselle Crescent\nSuite 839",
         "cityName": "Lithopolis, OH",
-        "countryCode":{"value":  "US"},
+        "countryCode": "US",
         "countryName": "United States"
       }
     },

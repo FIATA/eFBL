@@ -1,0 +1,1130 @@
+{
+  "exchanged_document": {
+    "contractualClause": {
+      "id": "bea55a86-b11f-42fb-9f12-434ebece63ca",
+      "text": {
+        "value": "Ea et qui et eos."
+      }
+    },
+    "issueLocation": {
+      "id": "fab6f281-0ff8-4932-af7b-82bc468fdcd0",
+      "name": {
+        "value": "Peoria"
+      },
+      "countryCode": "GF"
+    },
+    "issueDateTime": {
+      "value": "2022-10-08T22:49:42.695Z",
+      "format": "MM/DD/YYYY"
+    },
+    "originalIssuedQuantity": "six",
+    "documentStatus": {
+      "value": "a(4eTKeU#'",
+      "agency": "]O&6[!@ZEz"
+    },
+    "firstSignatoryAuthentication": {
+      "actualDateTime": {
+        "value": "2022-09-17T08:29:12.455Z",
+        "format": "MM/DD/YYYY"
+      },
+      "id": "b6dad503-3379-4aeb-89d5-320d6fe9ff24",
+      "statement": {
+        "value": "c;dgeL$n*x"
+      }
+    }
+  },
+  "supply_chain_consignment": {
+    "cto": {
+      "id": [
+        {
+          "value": "ba75686a-e02e-450f-aff1-026916e90b06",
+          "identificationScheme": "deposit",
+          "identificationSchemeAgency": "FIATA"
+        }
+      ],
+      "name": {
+        "value": "Waters - Stark",
+        "language": "en"
+      },
+      "languageCode": {
+        "value": "en",
+        "agency": ""
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Lisa Hirthe"
+        },
+        "telephone": {
+          "value": "1-881-224-1308"
+        },
+        "mobileTelephone": {
+          "value": "1-444-308-0510"
+        },
+        "emailAddress": {
+          "value": "Callie45@yahoo.com"
+        },
+        "note": []
+      },
+      "postalAddress": {
+        "postcode": "10248",
+        "streetName": "Anya Burgs",
+        "cityName": "Sarasota",
+        "countryCode": "KR",
+        "countryName": "Pitcairn Islands",
+        "countrySubDivisionName": "Montana"
+      },
+      "taxRegistration": [],
+      "governmentRegistration": []
+    },
+    "ctoAgent": {
+      "name": {
+        "value": "Kunde - Pfannerstill",
+        "language": "en"
+      },
+      "languageCode": {
+        "value": "en",
+        "agency": ""
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Luther Kuvalis"
+        },
+        "telephone": {
+          "value": "1-221-984-7234 x2396"
+        },
+        "mobileTelephone": {
+          "value": "1-610-304-9742 x312"
+        },
+        "emailAddress": {
+          "value": "Marianna_Lowe@yahoo.com"
+        },
+        "note": []
+      },
+      "postalAddress": {
+        "postcode": "35397",
+        "streetName": "Jast Underpass",
+        "cityName": "Bowie",
+        "countryCode": "AF",
+        "countryName": "Gambia",
+        "countrySubDivisionName": "Iowa"
+      },
+      "taxRegistration": [],
+      "governmentRegistration": []
+    },
+    "includedConsignmentItem": [
+      {
+        "goodsTypeCode": {
+          "value": "\\1o425/!",
+          "agency": "Simonis, Conn and McClure"
+        },
+        "declaredValueForCarriageAmount": {
+          "value": 989128,
+          "currency": "HTG"
+        },
+        "insuranceValueAmount": {
+          "value": 988466,
+          "currency": "SLL"
+        },
+        "grossWeight": {
+          "value": 397164,
+          "unit": "kg"
+        },
+        "grossVolume": {
+          "value": 288705,
+          "unit": "m^3"
+        },
+        "cargoNatureIdentification": {
+          "typeCode": {
+            "value": "NOX,EI}/",
+            "agency": "Money"
+          },
+          "identificationText": [
+            {
+              "value": "Iste omnis odio dolorum et harum quidem labore nemo."
+            },
+            {
+              "value": "Non vitae molestias sed inventore quis veniam totam."
+            },
+            {
+              "value": "Odit beatae consequatur ut quia."
+            }
+          ]
+        },
+        "transportDangerousGoods": [
+          {
+            "undgId": {
+              "value": "3e8b5b1f-97e"
+            },
+            "hazardClassificationId": {
+              "value": "$6J[YNAP"
+            }
+          },
+          {
+            "undgId": {
+              "value": "9d33a9ce-f45"
+            },
+            "hazardClassificationId": {
+              "value": "CN+DB`EG"
+            }
+          },
+          {
+            "undgId": {
+              "value": "31ff63bc-955"
+            },
+            "hazardClassificationId": {
+              "value": "/N`0E3'J"
+            }
+          }
+        ],
+        "associatedTransportEquipment": [
+          {
+            "id": {
+              "value": "5914257f-376"
+            },
+            "sealQuantity": 55151082,
+            "affixedSeal": [
+              {
+                "value": "SB40LSZ"
+              },
+              {
+                "value": "OV91ZFJ"
+              },
+              {
+                "value": "CO58SPY"
+              }
+            ]
+          }
+        ],
+        "transportPackage": [
+          {
+            "itemQuantity": 63329251,
+            "typeCode": {
+              "value": "_A]^%",
+              "agency": ""
+            },
+            "typeText": "Sapiente quis officia aspernatur quia est enim.",
+            "shippingMarks": ["TSVUE"]
+          }
+        ],
+        "usedTransportEquipment": [
+          {
+            "id": {
+              "value": "41982102-d39a-4fca-9c41-3a0a44332063"
+            },
+            "sealQuantity": 32912605,
+            "affixedSeal": [
+              {
+                "value": "OZ79NWK"
+              },
+              {
+                "value": "LV12ETO"
+              },
+              {
+                "value": "VG99EBL"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "b849be7c-440b-457a-9da2-b63e73a766b0"
+            },
+            "sealQuantity": 48276802,
+            "affixedSeal": [
+              {
+                "value": "VI11KHG"
+              },
+              {
+                "value": "LF64AHK"
+              },
+              {
+                "value": "YH00WVG"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "7884f037-fff3-4ae8-9f61-ea3e0ab1e2a4"
+            },
+            "sealQuantity": 79145557,
+            "affixedSeal": [
+              {
+                "value": "HO04MGI"
+              },
+              {
+                "value": "JC22EZQ"
+              },
+              {
+                "value": "FL07LTD"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "goodsTypeCode": {
+          "value": ":6;Ir].y",
+          "agency": "Gibson - Kuphal"
+        },
+        "declaredValueForCarriageAmount": {
+          "value": 886710,
+          "currency": "THB"
+        },
+        "insuranceValueAmount": {
+          "value": 485221,
+          "currency": "DJF"
+        },
+        "grossWeight": {
+          "value": 228082,
+          "unit": "kg"
+        },
+        "grossVolume": {
+          "value": 559710,
+          "unit": "m^3"
+        },
+        "cargoNatureIdentification": {
+          "typeCode": {
+            "value": "W[Z-4}58",
+            "agency": "Account"
+          },
+          "identificationText": [
+            {
+              "value": "Optio harum dolor dolor tempore repellat."
+            },
+            {
+              "value": "Ut pariatur odit modi."
+            },
+            {
+              "value": "Blanditiis et aut voluptas."
+            }
+          ]
+        },
+        "transportDangerousGoods": [
+          {
+            "undgId": {
+              "value": "9c216d10-c15"
+            },
+            "hazardClassificationId": {
+              "value": "]^,?TS4P"
+            }
+          },
+          {
+            "undgId": {
+              "value": "de01bf49-8c1"
+            },
+            "hazardClassificationId": {
+              "value": "KDB@ZM@G"
+            }
+          },
+          {
+            "undgId": {
+              "value": "3f65d081-845"
+            },
+            "hazardClassificationId": {
+              "value": "U,#ZBO[#"
+            }
+          }
+        ],
+        "associatedTransportEquipment": [
+          {
+            "id": {
+              "value": "dcce8bd6-d66"
+            },
+            "sealQuantity": 34703244,
+            "affixedSeal": [
+              {
+                "value": "WC74HSM"
+              },
+              {
+                "value": "OW08HRX"
+              },
+              {
+                "value": "YX26LCN"
+              }
+            ]
+          }
+        ],
+        "transportPackage": [
+          {
+            "itemQuantity": 761882,
+            "typeCode": {
+              "value": "1P2^/",
+              "agency": ""
+            },
+            "typeText": "Amet excepturi vero.",
+            "shippingMarks": ["LR?JX"]
+          }
+        ],
+        "usedTransportEquipment": [
+          {
+            "id": {
+              "value": "56c5d2eb-098d-4b71-a685-c574bd301971"
+            },
+            "sealQuantity": 48289984,
+            "affixedSeal": [
+              {
+                "value": "CT45KLT"
+              },
+              {
+                "value": "WG11QRE"
+              },
+              {
+                "value": "KT59MHT"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "273cf679-19cf-4ab3-b073-d535882cc9ae"
+            },
+            "sealQuantity": 68160273,
+            "affixedSeal": [
+              {
+                "value": "CY04EMZ"
+              },
+              {
+                "value": "AS58VYK"
+              },
+              {
+                "value": "KP35AKI"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "a4955b16-02f2-4660-b8ef-32d4d595841a"
+            },
+            "sealQuantity": 98225448,
+            "affixedSeal": [
+              {
+                "value": "ZZ04NHU"
+              },
+              {
+                "value": "CU74DFM"
+              },
+              {
+                "value": "WY78WBC"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "goodsTypeCode": {
+          "value": "i+)vf.nd",
+          "agency": "Renner, Kunde and Lebsack"
+        },
+        "declaredValueForCarriageAmount": {
+          "value": 159123,
+          "currency": "XFU"
+        },
+        "insuranceValueAmount": {
+          "value": 235167,
+          "currency": "ILS"
+        },
+        "grossWeight": {
+          "value": 414288,
+          "unit": "kg"
+        },
+        "grossVolume": {
+          "value": 990888,
+          "unit": "m^3"
+        },
+        "cargoNatureIdentification": {
+          "typeCode": {
+            "value": "[FZUA=.S",
+            "agency": "Dynamic"
+          },
+          "identificationText": [
+            {
+              "value": "Consectetur temporibus inventore minima sit sapiente."
+            },
+            {
+              "value": "Quas aut temporibus unde delectus illum et aut temporibus sed."
+            },
+            {
+              "value": "Labore explicabo labore quo assumenda cumque cupiditate."
+            }
+          ]
+        },
+        "transportDangerousGoods": [
+          {
+            "undgId": {
+              "value": "2d762662-289"
+            },
+            "hazardClassificationId": {
+              "value": "J[GD&$MA"
+            }
+          },
+          {
+            "undgId": {
+              "value": "26462cab-98a"
+            },
+            "hazardClassificationId": {
+              "value": "3ZFS>LAU"
+            }
+          },
+          {
+            "undgId": {
+              "value": "3fe658e0-b02"
+            },
+            "hazardClassificationId": {
+              "value": "XOX]@>#B"
+            }
+          }
+        ],
+        "associatedTransportEquipment": [
+          {
+            "id": {
+              "value": "fa05a62c-865"
+            },
+            "sealQuantity": 27885450,
+            "affixedSeal": [
+              {
+                "value": "ZE43BEZ"
+              },
+              {
+                "value": "LB51DKL"
+              },
+              {
+                "value": "LZ28WLS"
+              }
+            ]
+          }
+        ],
+        "transportPackage": [
+          {
+            "itemQuantity": 38772296,
+            "typeCode": {
+              "value": "4%`[1",
+              "agency": ""
+            },
+            "typeText": "Perferendis ratione qui voluptatem explicabo.",
+            "shippingMarks": ["0V_#3"]
+          }
+        ],
+        "usedTransportEquipment": [
+          {
+            "id": {
+              "value": "8707a2dc-0a8a-400e-a4ac-70b4dd63a7d7"
+            },
+            "sealQuantity": 33320158,
+            "affixedSeal": [
+              {
+                "value": "FH75OGI"
+              },
+              {
+                "value": "TE46DCH"
+              },
+              {
+                "value": "MO68AXE"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "5fb5b816-b0bd-4203-b554-3cd73cee80c1"
+            },
+            "sealQuantity": 96054152,
+            "affixedSeal": [
+              {
+                "value": "FE71BKO"
+              },
+              {
+                "value": "LR89DIQ"
+              },
+              {
+                "value": "CT42QIW"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "c1e2b4c6-1535-4a2e-904a-73c467907813"
+            },
+            "sealQuantity": 90817512,
+            "affixedSeal": [
+              {
+                "value": "TL51YTD"
+              },
+              {
+                "value": "IL82SRO"
+              },
+              {
+                "value": "GS23ALF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "goodsTypeCode": {
+          "value": "xKaWC./?",
+          "agency": "Schmidt and Sons"
+        },
+        "declaredValueForCarriageAmount": {
+          "value": 46113,
+          "currency": "AED"
+        },
+        "insuranceValueAmount": {
+          "value": 325703,
+          "currency": "SLL"
+        },
+        "grossWeight": {
+          "value": 708151,
+          "unit": "kg"
+        },
+        "grossVolume": {
+          "value": 27150,
+          "unit": "m^3"
+        },
+        "cargoNatureIdentification": {
+          "typeCode": {
+            "value": "-T0BXYT@",
+            "agency": "Home"
+          },
+          "identificationText": [
+            {
+              "value": "Et sint molestiae odit impedit suscipit omnis numquam."
+            },
+            {
+              "value": "Ipsa dolor perspiciatis animi reprehenderit distinctio facere nemo."
+            },
+            {
+              "value": "Maiores maiores nam."
+            }
+          ]
+        },
+        "transportDangerousGoods": [
+          {
+            "undgId": {
+              "value": "c3fd5dde-f87"
+            },
+            "hazardClassificationId": {
+              "value": "W=DFYHL?"
+            }
+          },
+          {
+            "undgId": {
+              "value": "300acef8-908"
+            },
+            "hazardClassificationId": {
+              "value": "4,/}}&M2"
+            }
+          },
+          {
+            "undgId": {
+              "value": "a39aed47-35a"
+            },
+            "hazardClassificationId": {
+              "value": "N2SJ1HJ}"
+            }
+          }
+        ],
+        "associatedTransportEquipment": [
+          {
+            "id": {
+              "value": "096fd91e-764"
+            },
+            "sealQuantity": 54354568,
+            "affixedSeal": [
+              {
+                "value": "YT01ICI"
+              },
+              {
+                "value": "IU04PZV"
+              },
+              {
+                "value": "FI12EBR"
+              }
+            ]
+          }
+        ],
+        "transportPackage": [
+          {
+            "itemQuantity": 14950157,
+            "typeCode": {
+              "value": "97Z#A",
+              "agency": ""
+            },
+            "typeText": "Suscipit cupiditate atque vero eos quae architecto et.",
+            "shippingMarks": ["AYCDK"]
+          }
+        ],
+        "usedTransportEquipment": [
+          {
+            "id": {
+              "value": "b931bf3f-1392-4faf-830e-ea349ae59135"
+            },
+            "sealQuantity": 49959555,
+            "affixedSeal": [
+              {
+                "value": "BI71GPL"
+              },
+              {
+                "value": "KF80LWZ"
+              },
+              {
+                "value": "FT70USK"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "a30a7ba4-b1ab-4f2f-9ceb-421ba87ad08d"
+            },
+            "sealQuantity": 65186865,
+            "affixedSeal": [
+              {
+                "value": "IC80WER"
+              },
+              {
+                "value": "ZF63UKC"
+              },
+              {
+                "value": "DL30GSI"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "1c669422-999f-46ff-8547-d936666c486a"
+            },
+            "sealQuantity": 29502842,
+            "affixedSeal": [
+              {
+                "value": "KN99CWG"
+              },
+              {
+                "value": "OH60OVX"
+              },
+              {
+                "value": "IK90SSA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "goodsTypeCode": {
+          "value": "7ESA,!C@",
+          "agency": "Hermann - Hermann"
+        },
+        "declaredValueForCarriageAmount": {
+          "value": 24831,
+          "currency": "IDR"
+        },
+        "insuranceValueAmount": {
+          "value": 692876,
+          "currency": "KHR"
+        },
+        "grossWeight": {
+          "value": 218041,
+          "unit": "kg"
+        },
+        "grossVolume": {
+          "value": 502011,
+          "unit": "m^3"
+        },
+        "cargoNatureIdentification": {
+          "typeCode": {
+            "value": ".T`7C%=@",
+            "agency": "redefine"
+          },
+          "identificationText": [
+            {
+              "value": "Maxime occaecati aliquam debitis quia omnis ea quo vero."
+            },
+            {
+              "value": "Est cupiditate harum rerum velit et fugiat eum."
+            },
+            {
+              "value": "Aperiam et vel est itaque quia corrupti dolor architecto."
+            }
+          ]
+        },
+        "transportDangerousGoods": [
+          {
+            "undgId": {
+              "value": "1373b48d-549"
+            },
+            "hazardClassificationId": {
+              "value": "L(PUB4ES"
+            }
+          },
+          {
+            "undgId": {
+              "value": "ac97c35f-6de"
+            },
+            "hazardClassificationId": {
+              "value": "*_LF,PV7"
+            }
+          },
+          {
+            "undgId": {
+              "value": "ebf931f2-477"
+            },
+            "hazardClassificationId": {
+              "value": "9%;:F0-\""
+            }
+          }
+        ],
+        "associatedTransportEquipment": [
+          {
+            "id": {
+              "value": "4bc060f4-840"
+            },
+            "sealQuantity": 23612892,
+            "affixedSeal": [
+              {
+                "value": "UL82FAP"
+              },
+              {
+                "value": "XM78LHI"
+              },
+              {
+                "value": "HP07OGD"
+              }
+            ]
+          }
+        ],
+        "transportPackage": [
+          {
+            "itemQuantity": 11574677,
+            "typeCode": {
+              "value": "C;KD\\",
+              "agency": ""
+            },
+            "typeText": "Sed officiis dolores molestias sed eveniet omnis.",
+            "shippingMarks": ["ZRFJF"]
+          }
+        ],
+        "usedTransportEquipment": [
+          {
+            "id": {
+              "value": "5d6a38f6-c36d-4c9f-8c0d-74f82246b8b1"
+            },
+            "sealQuantity": 11356287,
+            "affixedSeal": [
+              {
+                "value": "OS67ORH"
+              },
+              {
+                "value": "HL91LTF"
+              },
+              {
+                "value": "ID24OLL"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "3e395da7-4132-45a6-81d9-7c9eb1cec5d0"
+            },
+            "sealQuantity": 55781244,
+            "affixedSeal": [
+              {
+                "value": "IU61SJP"
+              },
+              {
+                "value": "XL48MMU"
+              },
+              {
+                "value": "CR65TYM"
+              }
+            ]
+          },
+          {
+            "id": {
+              "value": "684baa09-1068-49c0-a672-7ebdcd5dc6a4"
+            },
+            "sealQuantity": 37423544,
+            "affixedSeal": [
+              {
+                "value": "MQ85GDH"
+              },
+              {
+                "value": "PS65JFP"
+              },
+              {
+                "value": "ZC09XFY"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cargoInsuranceProvidedByCTO": true,
+    "declaredValueForCarriageAmount": {
+      "value": 43095,
+      "currency": "BMD"
+    },
+    "totalChargeAmount": {
+      "value": 41134,
+      "currency": "SOS"
+    },
+    "applicableServiceCharge": [
+      {
+        "paymentPlace": {
+          "id": "eeac0fc6-af7e-4d6c-9f71-45256ee6d637",
+          "name": {
+            "value": "Dundalk"
+          },
+          "countryCode": "GA"
+        },
+        "paymentArrangementCode": {
+          "value": "41497",
+          "agency": "Friesen - Schultz"
+        }
+      },
+      {
+        "paymentPlace": {
+          "id": "7bc819a2-13d2-4e15-8a69-0d7e079d421c",
+          "name": {
+            "value": "Spokane"
+          },
+          "countryCode": "TV"
+        },
+        "paymentArrangementCode": {
+          "value": "13947",
+          "agency": "Koepp - Mosciski"
+        }
+      },
+      {
+        "paymentPlace": {
+          "id": "b4f55cc6-cdf6-4cfc-9e00-d8f7e6139379",
+          "name": {
+            "value": "Fort Myers"
+          },
+          "countryCode": "AD"
+        },
+        "paymentArrangementCode": {
+          "value": "20508",
+          "agency": "Strosin - Jacobson"
+        }
+      }
+    ],
+    "consignor": {
+      "name": {
+        "value": "Consignor Test GMbH"
+      },
+      "postalAddress": {
+        "postcode": "49591",
+        "streetName": "Steuber Ports",
+        "cityName": "South Whittier",
+        "countryCode": "PK",
+        "countryName": "Pitcairn Islands",
+        "countrySubDivisionName": "Missouri"
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Alyssa Doyle"
+        },
+        "telephone": {
+          "value": "(300) 453-6378"
+        },
+        "mobileTelephone": {
+          "value": "459-350-1736 x5087"
+        },
+        "emailAddress": {
+          "value": "Gerard_OHara@yahoo.com"
+        },
+        "note": []
+      }
+    },
+    "consignee": {
+      "name": {
+        "value": "Williamson - O'Hara"
+      },
+      "postalAddress": {
+        "postcode": "93764-0627",
+        "streetName": "Graham Glens",
+        "cityName": "Hemet",
+        "countryCode": "AW",
+        "countryName": "Saint Barthelemy",
+        "countrySubDivisionName": "California"
+      },
+      "definedContactDetails": {
+        "personName": {
+          "value": "Mrs. Dixie Casper"
+        },
+        "telephone": {
+          "value": "(489) 752-4738 x31256"
+        },
+        "mobileTelephone": {
+          "value": "(318) 631-2941"
+        },
+        "emailAddress": {
+          "value": "Oleta.Leannon86@hotmail.com"
+        },
+        "note": []
+      }
+    },
+    "notifiedParty": [
+      {
+        "name": {
+          "value": "Zieme, Nicolas and Tremblay"
+        },
+        "postalAddress": {
+          "postcode": "88199",
+          "streetName": "Meaghan Estates",
+          "cityName": "Baldwin Park",
+          "countryCode": "NO",
+          "countryName": "Malaysia",
+          "countrySubDivisionName": "Arizona"
+        },
+        "definedContactDetails": {
+          "personName": {
+            "value": "Angelica Hintz PhD"
+          },
+          "telephone": {
+            "value": "(612) 655-6676 x871"
+          },
+          "mobileTelephone": {
+            "value": "547-629-4719 x68501"
+          },
+          "emailAddress": {
+            "value": "Sophia_Ondricka55@gmail.com"
+          },
+          "note": []
+        }
+      },
+      {
+        "name": {
+          "value": "Pfannerstill - Smitham"
+        },
+        "postalAddress": {
+          "postcode": "88916-4964",
+          "streetName": "Abby Tunnel",
+          "cityName": "Toledo",
+          "countryCode": "SA",
+          "countryName": "Palestinian Territory",
+          "countrySubDivisionName": "West Virginia"
+        },
+        "definedContactDetails": {
+          "personName": {
+            "value": "Belinda Nader"
+          },
+          "telephone": {
+            "value": "785.388.4070 x570"
+          },
+          "mobileTelephone": {
+            "value": "(332) 852-9355 x42521"
+          },
+          "emailAddress": {
+            "value": "Ahmad_Lowe45@yahoo.com"
+          },
+          "note": []
+        }
+      },
+      {
+        "name": {
+          "value": "Bode LLC"
+        },
+        "postalAddress": {
+          "postcode": "13521",
+          "streetName": "Ricky Corner",
+          "cityName": "Milford",
+          "countryCode": "CR",
+          "countryName": "Cook Islands",
+          "countrySubDivisionName": "Oklahoma"
+        },
+        "definedContactDetails": {
+          "personName": {
+            "value": "Ethel Wuckert"
+          },
+          "telephone": {
+            "value": "565.380.8042 x64690"
+          },
+          "mobileTelephone": {
+            "value": "1-833-521-6905"
+          },
+          "emailAddress": {
+            "value": "Brice.Crooks69@yahoo.com"
+          },
+          "note": []
+        }
+      }
+    ],
+    "consigneeReceiptLocation": {
+      "id": "a5274476-0586-4d35-8302-4d898e74f7d8",
+      "name": {
+        "value": "White Inc"
+      },
+      "countryCode": "MZ"
+    },
+    "mainCarriageTransportMovement": [
+      {
+        "typeCode": {
+          "value": "+D[H(00="
+        },
+        "typeText": {
+          "value": "Cargo Van"
+        },
+        "id": {
+          "value": "ee51763b-c634-4f3c-a2b6-7305f67dcc10"
+        },
+        "name": {
+          "value": "Rustic Concrete Tuna"
+        },
+        "voyageNumber": {
+          "value": "{4;:E^MM"
+        }
+      },
+      {
+        "typeCode": {
+          "value": "5\\4LF/VS"
+        },
+        "typeText": {
+          "value": "Crew Cab Pickup"
+        },
+        "id": {
+          "value": "3fe223f0-6905-4287-9c09-6af4248092b6"
+        },
+        "name": {
+          "value": "Handmade Granite Towels"
+        },
+        "voyageNumber": {
+          "value": "GOQ9F63P"
+        }
+      },
+      {
+        "typeCode": {
+          "value": "4ST$F.R\""
+        },
+        "typeText": {
+          "value": "Wagon"
+        },
+        "id": {
+          "value": "d9181417-0f29-434c-8bd9-e289f0d21025"
+        },
+        "name": {
+          "value": "Generic Granite Pizza"
+        },
+        "voyageNumber": {
+          "value": "H/]X&N-7"
+        }
+      }
+    ],
+    "loadingBaseportLocation": {
+      "id": "fe39d2f9-f4c8-4273-aed5-70963ab8eb1e",
+      "name": {
+        "value": "Will Group"
+      },
+      "countryCode": "CM"
+    },
+    "unloadingBaseportLocation": {
+      "id": "7761e690-6852-46f2-a8be-c389c65228d4",
+      "name": {
+        "value": "Stanton, Frami and Cole"
+      },
+      "countryCode": "IQ"
+    },
+    "carrierAcceptanceLocation": {
+      "id": "90bc3ce7-0c37-4190-b32c-b3f7a53254c2",
+      "name": {
+        "value": "Bogisich LLC"
+      },
+      "countryCode": "FJ"
+    }
+  }
+}
