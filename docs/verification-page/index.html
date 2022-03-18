@@ -395,8 +395,8 @@
          // document.querySelector('#trakk-widget > section').click()
 
          // Custom overwrite to target a specific env. In this case, it's for dev purposes only
-         window.TRAKK_API_BASE_URL = "https://api.komgo-ci-ng.gmk-solutions.io/api/magic-link";
-         window.TRAKK_API_DOCS_URL = "https://api.komgo-lms-ci-ng.gmk-solutions.io/api/docs-2";
+         window.TRAKK_API_BASE_URL = "https://api.komgo-dev-2.gmk-solutions.io/api/magic-link";
+         window.TRAKK_API_DOCS_URL = "https://api.komgo-lms-dev-2.gmk-solutions.io/api/trakk/v0/fiata/doc";
 
          // widget style:
          window.TRAKK_WIDGET_TYPE = 'inlined'; // 'default' or nothing meaning current widget position || 'inlined' || 'inlined-button'
@@ -407,8 +407,7 @@
 
          window.TRAKK_FIATA_ENABLED = true;
       </script>
-      <script defer src="https://d36ygvu01nuobw.cloudfront.net/trakk.0.1.0-fiata.js"
-              integrity="sha384-XU5zrul1QvSdcIuulHs+5qZK9QGNIseRytrwzDxM5siln6BkVbfj8nUr60yjRQuc"
-              crossorigin="anonymous"></script>
+      
+      <script defer src="https://d36ygvu01nuobw.cloudfront.net/trakk.0.2.2-fiata.min.js" integrity="sha256-allgCT8zO4WngNk23Hdo8Ai9WiOkp4VGCqrXeP6YC+g=" crossorigin="anonymous"></script>
    </body>
 </html>
