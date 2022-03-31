@@ -8,9 +8,7 @@ You can use the online [verification page](https://fiata.github.io/eFBL/verifica
 
 ## Model
 
-The general model below is indicative only. Please refer to the json-schema and the generated documentation for exact definitions. 
-
-![eFBL Model](docs/model.gif)
+Please refer to the json-schema and the generated documentation for exact definitions. 
 
 ## Code List Recommendations
 
