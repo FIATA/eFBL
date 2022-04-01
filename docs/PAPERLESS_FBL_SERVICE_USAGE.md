@@ -207,8 +207,7 @@ result in an error response
 
 ##### Status
 
-`400 Bad Request`
-
+`401 Unauthorized`
 
 
 #### Error Response - Amendment of a unregistered document
