@@ -117,7 +117,7 @@ The service allows you to produce versions of the FIATA Bill of Lading. There ar
 |---------------|---------------------------|---------------------------------------------------------|
 | Content-Type  | `application/json`        |                                                         |
 | Authorization | `Bearer {{access_token}}` | Please insert the token retrieved in the Authentication |
-| X-Alias-ID    | `fiata`                   | Constant to be included                                 |
+| X-Alias-ID    | `{{client_id}}`           | Please insert the client id provided                    |
 
 
 ##### Query Paramaters
