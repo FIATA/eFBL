@@ -18,6 +18,6 @@
       "$ref": "text.schema.json"
     }
   },
-  "required": ["actualDateTime", "id", "statement"],
+  "required": [],
   "additionalProperties": false
 }

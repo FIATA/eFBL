@@ -9,6 +9,15 @@
       "description": "The unique identifier of this exchanged document.",
       "$ref": "classes/identifier.schema.json"
     },
+
+    "additionalIdentifiers": {
+      "description": "Additional identifiers for specific needs, for example required by national agency such as customs",
+      "type": "array",
+      "items": {
+        "$ref": "classes/standardized-identifier.schema.json"
+      }
+    },
+
     "issueDateTime": {
       "description": "Date of issue. The date, time, date time or other date time value for the issuance of this exchanged document.",
       "$ref": "classes/date-time.schema.json"
