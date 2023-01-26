@@ -66,22 +66,22 @@
     },
     "carrierAcceptanceLocation": {
       "title": "Carrier Acceptance Location",
-      "description": "Place of delivery. The location where this supply chain consignment will be, or has been, accepted by the carrier.",
+      "description": "Place of delivery. The location where this supply chain consignment will be, or has been, accepted by the carrier.The recommended standard to identify locations is UN/LOCODE: https://unece.org/trade/uncefact/unlocode",
       "$ref": "classes/logistics-location.schema.json"
     },
     "consigneeReceiptLocation": {
       "title": "Consignee Receipt Location",
-      "description": "Place of receipt. The location at which this supply chain consignment will be or has been received by the consignee.",
+      "description": "Place of receipt. The location at which this supply chain consignment will be or has been received by the consignee. The recommended standard to identify locations is UN/LOCODE: https://unece.org/trade/uncefact/unlocode",
       "$ref": "classes/logistics-location.schema.json"
     },
     "loadingBaseportLocation": {
       "title": "Loading Baseport Location",
-      "description": "Port of loading. The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract.",
+      "description": "Port of loading. The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract. The recommended standard to identify locations is UN/LOCODE: https://unece.org/trade/uncefact/unlocode",
       "$ref": "classes/logistics-location.schema.json"
     },
     "unloadingBaseportLocation": {
       "title": "Unloading Baseport Location",
-      "description": "Port of discharge. The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract.",
+      "description": "Port of discharge. The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract. The recommended standard to identify locations is UN/LOCODE: https://unece.org/trade/uncefact/unlocode",
       "$ref": "classes/logistics-location.schema.json"
     },
     "includedConsignmentItem": {
@@ -312,7 +312,7 @@
         },
         "countryCode": {
           "title": "Country Code",
-          "description": "The unique identifier of a country for this trade address.",
+          "description": "The unique identifier of a country for this trade address. The recommended standard to identify countries is ISO 3166:https://www.iso.org/iso-3166-country-codes.html ",
           "$ref": "classes/country-code.schema.json"
         },
         "countryName": {
@@ -418,7 +418,7 @@
         },
         "originTradeCountry": {
           "title": "Origin Country",
-          "description": "The country of origin where this supply chain consignment item has been produced.",
+          "description": "The country of origin where this supply chain consignment item has been produced. The recommended standard to identify countries is ISO 3166: https://www.iso.org/iso-3166-country-codes.html ",
           "$ref": "classes/country-code.schema.json"
         }
       },
