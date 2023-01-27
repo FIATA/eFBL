@@ -35,7 +35,7 @@
       "$ref": "classes/quantity.schema.json"
     },
     "issueLocation": {
-      "description": "Place of issue. The location where this exchanged document has been issued.",
+      "description": "Place of issue. The location where this exchanged document has been issued. The recommended standard to identify locations is UN/LOCODE: https://unece.org/trade/uncefact/unlocode.",
       "$ref": "classes/logistics-location.schema.json"
     },
     "contractualClause": {
