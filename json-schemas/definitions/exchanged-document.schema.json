@@ -19,7 +19,7 @@
     },
 
     "issueDateTime": {
-      "description": "Date of issue. The date, time, date time or other date time value for the issuance of this exchanged document.",
+      "description": "Date of issue. The date, time, date time or other date time value for the issuance of this exchanged document. ISO 8601 is the recommended standard to represent date and time: https://www.iso.org/iso-8601-date-and-time-format.html ",
       "$ref": "classes/date-time.schema.json"
     },
     "originalIssuedQuantity": {
