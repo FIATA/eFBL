@@ -219,4 +219,31 @@ the call will result in an error response. Please note that a document identifie
 
 `400 Bad Request`
 
+### Health
 
+The service allows you to check the availability of the service. This service is only available with a valid authentication token. See Authentication above, how to get the authentication token.
+
+#### Request specification
+
+##### Call
+
+| Element      | Value                                                       |
+|--------------|-------------------------------------------------------------|
+| Method       | GET                                                         |
+| URL Pattern  | ``` {{api_server}}/api/trakk/v0/integrations/health ```     |
+
+
+##### Meaningful Headers
+
+| Header        | Value                     | Note                                                    |
+|---------------|---------------------------|---------------------------------------------------------|
+| Authorization | `Bearer {{access_token}}` | Please insert the token retrieved in the Authentication |
+| X-Alias-ID    | `{{client_id}}`           | Please insert the client id provided                    |
+
+#### Successful Response
+
+##### Status
+
+On success, `204 No Content`
+
+On failure, any other failure HTTP status
