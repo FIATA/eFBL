@@ -90,7 +90,7 @@ Your provider handles all API communication, authentication, and secure key stor
 ---
 
 
-### 🛠️ Path 2: Integrate the FIATA eFBL API into Your Own System
+## 🛠️ Path 2: Integrate the FIATA eFBL API into Your Own System
 
 If you're developing your own Transport Management System (TMS) or shipping software, you can implement the FIATA Paperless FBL Service directly. This allows your system to generate, sign, and transmit secured digital FIATA Bills of Lading (eFBLs) according to FIATA standards.
 
