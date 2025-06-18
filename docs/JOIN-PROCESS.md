@@ -62,7 +62,6 @@ FIATA collaborates with a growing network of software providers that have implem
 Fill out this form to initiate the process:  
    👉 [Onboarding Form](https://1z932gem9zm.typeform.com/to/OIMuxKl7?typeform-source=www.efbl.fiata.org)
 
----
 
 #### 🧭 Steps to Get Started
 
@@ -70,25 +69,26 @@ Fill out this form to initiate the process:
    - Confirm with your current TMS or software vendor whether they support FIATA’s Paperless FBL Service.
    - Alternatively, refer to the [official list of connected providers](https://fiata.org/digital-bill-of-lading/) or contact FIATA support.
 
-2. **Request Access via Your Provider**
-   - If your provider is integrated, they will trigger the onboarding request on your behalf via the FIATA onboarding API.
-   - You do **not** need to contact FIATA directly or manage any credentials yourself at this stage.
-
-3. **Wait for FIATA Validation**
+2. **Wait for FIATA Validation**
    - FIATA will verify your company details (e.g., active membership and legal status) before activating your eFBL account.
    - Once validated, you will be issued a **unique digital signature certificate** linked to your company, enabling you to issue authenticated digital FBLs.
+
+3. **Enter your credentials into your TMS**
+   - The provided credentials are to be entered in a configuration page depending on the TMS you use
 
 4. **Start Issuing eFBLs**
    - Once activated, your software provider will allow you to create, sign, and share eFBLs directly within their platform.
    - Your company name will also appear in the public [Registry of Trusted Issuers](https://fiata.org/digital-bill-of-lading/).
 
----
 
 #### 🛠️ Technical Notes
 
 Your provider handles all API communication, authentication, and secure key storage. You do **not** need to manage API tokens, sign certificates, or implement any cryptographic protocol.
 
 > If your provider is not yet integrated, you may want to contact them to express interest or consider using a FIATA-verified platform.
+
+---
+
 
 ### 🛠️ Path 2: Integrate the FIATA eFBL API into Your Own System
 
