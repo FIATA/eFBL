@@ -25,10 +25,10 @@ config:
 ---
 flowchart TD
     %% START
-    Start([Start]) --> FormSubmission[/"Freight forwarder or software provider submits onboarding form"/]
+    Start([Start]) --> FormSubmission[/"Freight forwarder or <br>software provider<br> submits onboarding form"/]
 
     %% DECISION: Path
-    FormSubmission --> IsUsingProvider{Using FIATA-approved software provider?}
+    FormSubmission --> IsUsingProvider{Using FIATA-approved <br>software provider?}
 
     %% PATH 1
     IsUsingProvider -- Yes --> ValidateFF
@@ -37,14 +37,14 @@ flowchart TD
     IsUsingProvider -- No --> Path2_2["Receives test credentials (fake freight forwarder)"]
     Path2_2 --> Path2_3["Implements API"]
     Path2_3 --> Path2_4["Notifies FIATA"]
-    Path2_4 --> Path2_5["FIATA verifies implementation"]
+    Path2_4 --> Path2_5["FIATA verifies <br>implementation"]
     Path2_5 --> Path2_6["Provider listed as official eFBL provider"]
-    Path2_6 --> FFRegistration["Freight forwarders start onboarding using form"]
+    Path2_6 --> FFRegistration["Freight forwarders start <br>onboarding using form"]
     FFRegistration --> ValidateFF
 
     %% COMMON VALIDATION FLOW
-    ValidateFF["FIATA validates membership, insurance and legal status"] --> IssueCreds["FIATA issues staging and production credentials"]
-    IssueCreds --> CanIssue["Freight forwarder can issue secured eFBLs"]
+    ValidateFF["FIATA validates <br>membership, insurance <br>and legal status"] --> IssueCreds["FIATA issues staging and <br>production credentials"]
+    IssueCreds --> CanIssue["Freight forwarder can <br>issue secured eFBLs"]
     CanIssue --> End([End])
 
     %% STYLES
