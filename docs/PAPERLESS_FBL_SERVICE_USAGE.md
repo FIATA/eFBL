@@ -247,3 +247,12 @@ The service allows you to check the availability of the service. This service is
 On success, `204 No Content`
 
 On failure, any other failure HTTP status
+
+
+## URLs
+| Element      | Staging (UAT) URL                                  | Production URL                       |
+|--------------|------------------------------------------------|--------------------------------------|
+| auth server  | ```https://identity.eu.komgo-sit.net```        | ```https://keycloak.kapsule-eu.komgo.io``` |
+| API server   | ```https://api.kapsule-eu-uat.eu.komgo-sit.net```|  ```https://api.kapsule-eu.komgo.io``` | 
+| Verification server | ```https://api.komgo-uat.eu.komgo-sit.net``` | ```https://api.komgo.io``` |
+| Verification service (humans) | [Verification service UAT](https://fiata.github.io/eFBL/verification-page/index-uat.html) | [Verification service PROD](https://fiata.github.io/eFBL/verification-page/index.html) |
